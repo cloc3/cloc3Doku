@@ -1,0 +1,25 @@
+
+**Che cos'è QCN?**
+
+Il QCN (Quake-Catcher Network) è un progetto proposto a livello globale e attuato dalla Stanford UNI al fine di realizzare la più grande rete network al mondo per la condivisione ed elaborazione di dati sui fenomeni sismici.
+
+Il nostro intento è stato quello di **emulare** il progetto QCN, utilizzando un'accelerometro((ADXL345 della AnalogDevices)) del tutto simile a quello distribuito dal progetto QCN e redirigendo il flusso dei dati prodotti verso un'applicazione WEB per permettere una visualizzazione online. Per far ciò abbiamo lavorato sulla piattaforma hardware Arduino.
+L'iniziativa ci è stata resa possibile dalla facile reperibilità di entrambi gli strumenti, dall'esiguo prezzo e dalla grande quantità di materiale informativo online, comprendenti guide e spiegazioni varie.
+
+Il progetto era abbastanza complesso, ma dividendolo in brevi fasi il tutto ci è risultato più semplice.
+Il nostro percorso ha attraversato 3 grandi fasi, ognuna con un fine diverso, ma tutte strettamente collegate tra loro :
+
+  * Imparare ad usare Arduino;
+  * Monitor WEB;
+  * Gli Esperimenti.
+
+
+Imparare ad usare Arduino è stato il primo passo per comprendere come funziona la piattaforma, il suo utilizzo e la sua programmabilità in relazione all'accelerometro.\\
+Il monitor WEB invece è stato il fulcro del progetto, poichè tramite questa fase abbiamo potuto completare il nostro intento, ovvero predisporre una visualizzazione online dei dati ricavati con l'ausilio dell'accelerometro.\\
+Non meno importante è stata la parte pratica degli esperimenti svolta in ambito scolastico, grazie alla quale ci è stato possibile acquisire i dati da condividere. 
+
+
+^  Imparare ad usare arduino  ^  Monitor WEB  ^  Gli Esperimenti  ^
+| [[sintesi_arduino|Imparare ad usare Arduino]]|[[sintesi_monitor|Monitor WEB]]|[[sintesi_esperimenti|Gli Esperimenti]]|
+
+

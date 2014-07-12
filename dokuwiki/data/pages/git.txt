@@ -1,0 +1,57 @@
+====== Il software del produttore ======
+
+È incredibile quanto sia **facile** imparare ad usare un oggetto sofisticato come il sensore di accelerazione ADXL345.\\
+Come già detto, questo dipende da una precisa esigenza di mercato, che risiede nell'interesse del produttore a ridurre i tempi di apprendimento dei propri acquirenti. Anche per noi studenti, questo fenomeno può diventare un volano per abituarci ad imparare molto in tempi ristretti.
+
+Bisogna riconoscere, tuttavia, che, nella realtà oggettiva della scuola reale, si deve procedere con molta pazienza e con qualche cautela particolare.\\
+Purtroppo, gli studenti della scuola superiore non acquisiscono a tempo debito gli strumenti e i fondamenti culturali che servirebbero per essere introdotti al dibattito sui fenomeni tecnologici strategici del mondo contemporaneo. Sarebbe opportuno, invece, trovare uno spazio, all'interno dei programmi scolastici, per gli elementi di maggior rilievo relativi alla cultura dell'open source, vista non solo come contenuto tecnico, ma anche e soprattutto come valore di educazione civica.
+
+Insomma, imparare sarebbe facile, ma noi facciamo fatica //perché non abbiamo le basi//. Non avendo le basi, ci sembra più difficile arrivare là dove avremmo potuto giungere facilmente. Ma purtroppo, ai nostri giorni, un difetto di conoscenza porta conseguenze più gravi di quanto ci possa attendere.
+Infatti, viviamo in una società complessa, nella quale, sempre di più, **la conoscenza è fonte di libertà**. Di conseguenza, non possedere certe basi significa fare più fatica, e fare più fatica porta ad **essere meno liberi**. La filosofia del software libero affonda le proprie radici in una percezione profonda e concreta del valore della conoscenza come elemento di promozione dell'individuo.
+
+===== Il git =====
+
+Riportando queste idee alla nostra esperienza, ci possiamo accorgere che l'impegno profuso ad imparare certi strumenti a cui eravamo poco abituati, come ad esempio il [[il_terminale|terminale]], risulta molto utile per affrontare nuovi obiettivi che, in precedenza, ci sarebbero sembrati del tutto inavvicinabili.\\
+Adesso, che desideriamo acquisire il software distribuito dal produttore del nostro accelerometro, abbiamo l'occasione di prendere contatto con un nuovo strumento, chiamato [[http://it.wikipedia.org/wiki/Git_%28software%29|git]].
+Il **git** è uno strumento di condivisione di documenti costruito originariamente per mantere lo sviluppo del [[http://it.wikipedia.org/wiki/Linux#Il_kernel|kernel linux]], che in breve tempo ha incontrato una enorme fortuna e che possiamo descrivere ingenuamente come  una specie di dokuwiki degli sviluppatori di software. Sul git è possibile depositare dei file e modificarli successivamente, senza perdere la traccia delle versioni precedenti((e con particolari garanzie di sicurezza)), con logiche simili a quelle utilizzate da wikipedia e da altri prodotti analoghi.
+
+L'insegnante ci ha suggerito di fare una ricerca su internet con la chiave [[https://www.google.it/search?q=github+adafruit+adxl345&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:it:official&client=firefox-a&gfe_rd=cr&ei=M07yUpqAB6mO8QewtYC4Bw|github adafruit adxl345]], con la quale abbiamo individuato un archivio autorevole, utile per il nostro accelerometro.\\
+La Adafruit, che è una casa produttrice di materiali elettronici, utilizza un servizio chiamato [[http://it.wikipedia.org/wiki/GitHub|github]] proprio a questo scopo.
+
+Il software che stavamo cercando si trova [[https://github.com/adafruit/Adafruit_ADXL345|qui]].\\
+Come prima cosa abbiamo aperto il README, che è una sorta di presentazione del software e in particolare ci siamo soffermati a riflettere sull'ultima frase del testo:
+
+  Adafruit invests time and resources providing this open source code.  Please support Adafruit and open-source hardware by purchasing products from Adafruit!
+
+È una retorica pubblicitaria alla quale non siamo davvero molto abituati :-) !!!
+
+===== Scaricare da git =====
+
+  git clone https://github.com/adafruit/Adafruit_ADXL345
+
+Già fatto :?:\\
+Certo che sì :-).
+
+Guardiamoci dentro.
+
+  $ ls Adafruit_ADXL345/
+  Adafruit_ADXL345_U.cpp  Adafruit_ADXL345_U.h  examples  license.txt  README.md
+
+C'è una cartella di esempi. Tutti sotto!
+
+  $ cd Adafruit_ADXL345/examples/sensortest/
+  $ ls
+  sensortest.pde
+
+Questo è il nostro sketch. Per lavorare in Linux, bisogna attribuirgli estensione **.ino** e attivare scons:
+  $ mv sensortest.pde sensortest.ino
+  $ ln -s /usr/share/arduino/arscons/SConstruct
+  
+Provando a compilare, ancora non funziona. Abbiamo imparato allora, a riconoscere la presenza delle librerie e a spostarla in un percorso utile con l'//aiuto dell'insegnante//. Poi, abbiamo incontrato una nuova difficoltà:
+
+  $ grep "Serial.begin" sensortest.ino
+  Serial.begin(9600);
+
+**Serial. begin()** è una istruzione già nota. Imposta la velocità della porta seriale. Il modello di arduino con il quale stiamo lavorando, però, utilizza una porta seriale molto più veloce. Con 9600 non funziona. Dobbiamo usare **115200**.
+
+È fatta. Adesso tutto funziona a meraviglia.**!!!**

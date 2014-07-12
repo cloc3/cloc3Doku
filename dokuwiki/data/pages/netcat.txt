@@ -1,0 +1,59 @@
+====== Una riflessione sul concetto di flusso ======
+La parola **flusso**, in informatica è pressoché sinonimo della parola **file**.
+
+Questo termine, infatti, si riferisce a una //sequenza ordinata// di dati, che possono essere scambiati tra due processi in mutua interazione.
+In ambiente [[Unix]], il comando che gestisce i flussi dei dati si chiama **[[http://it.wikipedia.org/wiki/Cat_%28Unix%29|cat]]**. Ci è già capitato più volte di farne uso, soprattuto per eseguire delle stampe sullo schermo.
+
+Una delle prime cose che gli studenti chiedono quando viene loro insegnato ad usare questo comando è proprio l'origine del nome:\\
+Perché il comando **cat** si chiama proprio così?
+
+Ebbene, la parola cat proviene dal termine **concatena**. Se cat servisse esclusivamente ad eseguire stampe, si chiamerebbe **print**((accipicchia, questo brutto vizio di parlare sempre inglese)). Invece, cat è un comando costruito per stabilire un legame tra un input e un ouput. Cioè per gestire un flusso.\\
+In questa [[ridirigere_i_flussi|pagina]], abbiamo imparato il concetto di redirezione dei flussi e abbiamo visto che costituisce una funzione molto importante, gestita dal sistema operativo.
+
+====== La gestione dei flussi in rete ======
+Il comando di redirezione, però, opera esclusivamente tra processi che appartengono allo stesso sistema operativo. Quando due computer dialogano in rete, lo scambio dei dati comporta alcune differenze di carattere tecnico.
+
+=====I pacchetti di rete =====
+Il primo problema è che la comunicazione tra due macchine remote è più complessa di quella tra due processi di un singolo sistema: un flusso è una sequenza di dati troppo lunga per essere scambiata come una singola unità fisica. Per questo motivo i flussi vengono scomposti in pacchetti di dimensione abbastanza piccole, catalogati e scambiati sulla rete attraverso percorsi indipendenti((usando regole che sono definite nel cosidetto protocollo [[http://it.wikipedia.org/wiki/Suite_di_protocolli_Internet|tcp/ip]])).
+
+===== Le porte di rete =====
+Un secondo problema nasce dal fatto ogni singolo computer ha bisogno di gestire attraverso la rete un gran numero di funzioni diverse, che fluiscono tutte contemporaneamente da una unica connessione.\\
+Può capitare, ad esempio, di aver bisogno, contemporaneamente, di navigare su internet e intrattenere una chat o una videoconferenza con un amico. In queste situazioni il computer raccoglie e reinvia, allo stesso tempo, sia dati che riguardano le pagine internet, sia dati relativi alla chat, o alla videoconferenza.
+
+Nasce dunque la necessità di distinguere tra loro i pacchetti scambiati attraverso lo stesso canale((cioè attraverso la connessione di rete)).
+
+Questo problema si risolve per mezzo di una tecnica identificata con il nome di [[http://it.wikipedia.org/wiki/Porta_%28reti%29|porta di rete]].\\
+Ogni pacchetto viene abbinato ad un particolare numero, che ne indica la funzione. Se, ad esempio, un determinato pacchetto è destinato ad essere utilizzato da un browser, verrà abbinato alla porta logica **80**, che è il numero convenzionalmente dedicato alla navigazione su internet.\\
+Se invece il pacchetto deve essere usato per il servizio **ssh**, che abbiamo usato diffusamente in classe, sarà abbinato alla porta **21**.
+
+====== Il comando netcat ======
+
+Quanti problemi! Allora, redirigere il flusso su internet deve essere una cosa molto difficile.\\
+Forse è per questo che siamo costretti ad utilizzare strumenti complessi come skype o come whatsapp per questo genere di operazioni.
+
+No. In verità abbiamo preso l'abitudine a usare strumenti complessi solo perché non siamo abbastanza educati a cercare strumenti semplici che eseguono queste funzioni in un modo elementare.
+
+Il programma elementare che esegue la redirezione del flusso su internet si chiama **netcat**.
+
+Esistono diverse versioni di questo programma.\\
+Per esempio [[http://netcat.sourceforge.net|The gnu netcat]] oppure [[http://www.deepspace6.net/projects/netcat6.html|netcat6]]((scritto da sviluppatori italiani)).
+
+===== Usare netcat =====
+Usare netcat è molto semplice, a patto di conoscere il concetto di **indirizzo ip** e quello di **porta di rete**.
+
+[[http://qualapinna.blogspot.it/2011/10/una-vera-chat-bidirezionale-con-netcat.html|Questa]] è una delle tante pagine web che insegnano ad eseguire una chat usando netcat. In classe ci siamo riusciti da soli in circa 20 minuti.
+
+È possibile anche usare netcat per spedire leggere sul browser il contenuto di un file locale, per esempio del file **flusso.cvs** che contiene i dati acquisiti con l'accelerometro.
+
+Sul terminale locale, che corrisponde, ad esempio, alla macchina di indirizzo **172.16.1.101**, mettiamo in ascolto il servizio netcat in questo modo:
+
+  netcat -l -p 8000 <flusso.cvs
+
+L'attributo **-l** indica la modalità di ascolto((listen)). Il nostro programma, infatti si mette in ascolto, attendendo di essere contattato da un programma cliente.
+
+L'operatore **<** esegue una redirezione dell'input. Significa che netcat acquisisce in input il file flusso.cvs, per metterlo a disposizione della rete.
+
+In questo momento, qualunque programma remoto può leggere il flusso generato da netcat. Se, ad esempio, nel campo degli indirizzi, scriviamo:
+  http://172.16.1.101:8000
+
+Il nostro browser stamperà sullo schermo il contenuto del file **flusso.cvs**.

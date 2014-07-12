@@ -1,0 +1,53 @@
+====== I neutrini dell'esperimento OPERA. Che cosa è successo a febbraio? ======
+
+Bè, prima di tutto cerchiamo di ricordare che cosa era accaduto a [[piùvelocedelneutrino|settembre]].\\
+All'epoca, i ricercatori dell'esperimento OPERA pubblicarono un **Abstract**((Proposta)), per richiedere l'approvazione dei risultati di una misura relativa alla velocità dei neutrini emessi dai laboratori del CERN di Ginevra ed osservati per mezzo dei rivelatori del Gran Sasso.
+
+Leggendo il testo originale, abbiamo prima di tutto capito che cosa sia esattamente un abstract. E appunto, un abstract non è un risultato omologato. Il documento di settembre, infatti, costituiva proprio una semplice proposta con cui un gruppo di ricerca, per quanto autorevole, richiedeva l'omologazione di un risultato, //non ancora riconosciuto// dalla Comunità Scientifica.
+
+In secondo luogo, sempre dalla lettura delle conclusioni contenute nel testo originale, abbiamo imparato ad apprezzare la prudenza e la correttezza con la quale il lavoro di Opera è stato presentato:
+
+> Despite the large significance of the measurement reported here and the stability of the analysis ...
+> …, the potentially great impact of the result motivates the **continuation** of our studies in order to investigate possible still unknown systematic effects that could explain the observed anomaly.
+> We deliberately **do not attempt** any theoretical or phenomenological interpretation of the results.
+
+che traduciamo:
+
+> Nonostante il largo valore significativo conseguito dalla misura e la stabilità delle analisi ...
+>…, il grande impatto potenziale del risultato ci motiva a **continuare** i nostri studi per ricercare possibili ulteriori fattori di errore sistematico che potrebbero spiegare l'anomalia osservata.
+>Volutamente, noi **non vogliamo neppure provare** a esprimere una interpretazione teorica o fenomenologica del risultato acquisito.
+
+Insomma. Fin da subito, i ricercatori della collaborazione OPERA hanno impostato il dibattito scientifico sull'argomento con grande prudenza e con grande attenzione per evitare qualisiasi forzatura mediatiche sulle conseguenze relative al destino delle teorie relativistiche, disponendosi piuttosto a un processo di approfondimento critico che è tuttora in fase di evoluzione.
+
+A febbraio, sono state emesse alcune dichiarazioni ufficiali per la stampa((ma nessun documento ufficiale di rilievo scientifico)) da parte della collaborazione Opera e della Direzione del Cern, che purtroppo, ancora una volta, sono state ampiamente travisate nel significato da molti fonti giornalistiche. Qualche esempio di informazione corretta tuttavia esiste, ma bisogna proprio avere la fortuna di incontrarlo. [[http://www.borborigmi.org/2012/02/23/prima-di-annunciare-un-risultato-eccezionale-meglio-controllare-tutti-i-connettori|Questo]], forse, sembra proprio un ottimo riferimento.
+
+  * Siete d'accordo anche voi?
+  * Se si, perché?
+
+
+====== Che cosa è successo a marzo? ======
+
+L'otto di marzo, con [[http://arxiv.org/abs/1110.3763|questo]] preprint((i preprint sono documenti di servizio che i ricercatori pubblicano per dare notizie di anteprima sullo stato degli esperimenti in corso)) **ufficiale**, la [[http://icarus.lngs.infn.it/|Collaborazione Icarus]] comunica il risultato di una propria valutazione indipendente della velocità dei neutrini, che confuta le osservazioni di settembre 2011 della collaborazione Opera.
+
+Icarus è un dispositivo sperimentale residente ai Laboratori del Gran Sasso accanto ad Opera. La misura citata costituisce un risultato indipendente da quello di Opera, condotto da ricercatori diversi (il premio Nobel Carlo Rubbia è lo spokeman della collaborazione).
+
+Nel dibattito scientifico sulla velocità del neutrino, questa notizia ha un peso molto maggiore del comunicato stampa di febbraio ma, a quanto pare, gli organi di informazione hanno attribuito ad esso una risonanza molto inferiore.
+
+Bisogna dire che la tecnica di misura utilizzata dall'esperimento di Icarus è completamente diversa da quella di Opera. Mentre Opera, infatti, ha realizzato una misura di **velocità media**, desunta dalla divisione tra lo spazio percorso e il tempo impiegato, Icarus, invece, ha osservato le tracce lasciate dai neutrini nel gas di un particolare dispositivo, chiamato "camera a bolle". La velocità è stata valutata in un modo simile a quello con cui si potrebbe valutare la **velocità istantanea** di una papera in un laghetto, misurando la larghezza della scia lasciata nell'acqua.\\
+Questa grande differenza tra le due tipologie di esperimento fanno immaginare che la Comunità Scientifica non riterrà ancora chiuso l'argomento fino all'arrivo di nuove evidenze sperimentali.
+
+Qualche giorno dopo (il 15 marzo), Icarus ha pubblicato un [[http://arxiv.org/abs/1203.3433|secondo]] preprint, nel quale descrive una seconda misura di velocità media del tutto analoga a quella di Opera. Anche in questo caso, l'evidenza di velocità superluminari dichiarata da Opera è del tutto assente. Sembra quindi che il risultato di settembre sia avviato a una smentita definitiva.
+
+====== Uno sguardo da dietro le quinte ======
+
+Attraverso il blog di borborigmi (segnalato sopra) ho ottenuto un
+interessante contatto con il dr. Francesco Vissani, un fisico teorico che lavora
+al Gran Sasso e che, ancora prima degli annunci ufficiali, aveva esposto
+alcuni dubbi significativi sull'attendibilità della misura di Opera.\\ Senza
+altro commento, allego di seguito alcune presentazioni che ha tenuto in
+questi mesi presso alcuni Licei Scientifici ed universita'; se lo volete
+contattare, fatemi sapere che vi do il suo indirizzo email.
+
+Pescara - 28 gennaio 2012: {{:villani:pescara_280112.pdf}}.\\
+Camerino - 29 febbraio 2012: {{:villani:camerino_290212.pdf}}.\\
+Vasto - 22 marzo 2012: {{:villani:vasto_220312.pdf}}

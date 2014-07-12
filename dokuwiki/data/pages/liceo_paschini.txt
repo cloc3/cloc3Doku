@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>barra_sito</title>
+<script type='text/javascript'>
+function collegamento(riquadro) {
+  base=""+window.location
+  base=base.replace(/\/liceo_paschini/,"")
+  base=base.replace(/\/liceo paschini/,"")
+  base=base.replace(/\/liceo%20paschini/,"")
+  riquadro.getElementsByTagName('a')[0].href=base + riquadro.getElementsByTagName('a')[0].name
+}
+function getRandomInt(min, max)
+{
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function mescola(stringa){
+ var nuovaStringa=[]
+ for (var i=stringa.length-1; i>=0; --i){
+  scegliIndice=getRandomInt(0,i)
+  nuovaStringa=nuovaStringa.concat([stringa.splice(scegliIndice,1)])
+ }
+ return nuovaStringa
+}
+function mescolaArray(barra){
+ var barra=mescola(barra)
+ return barra 
+}
+function ciccia(){}
+function fuga(riquadro){
+ collegamento(riquadro)
+ var pampalugo=document.getElementById('pampalugo').innerHTML
+ var barra=[1,2,3,4,5]
+ //tolgo il pampalugo vecchio
+ barra.splice(pampalugo-1,1)
+ //scelgo il nuovo pampalugo da un posto a caso
+ pampalugo=barra[getRandomInt(0,3)]
+ //tolgo il nuovo pampalugo dalla barra
+ barra=[1,2,3,4,5]
+ barra.splice(pampalugo-1,1)
+ var dati=mescolaArray(barra)
+ for (i=dati.length-1;i>=0; i--) {
+  var sinistra = 15.*dati[i] + '%'
+  dati[i]=sinistra
+  document.getElementById(i).style.left=sinistra
+ }
+ sinistra= 15*(pampalugo) + '%'
+ document.getElementById('4').style.left=sinistra
+ document.getElementById('pampalugo').innerHTML=pampalugo
+}
+</script>
+</head>
+<div id='barra_superiore' style='width:100%;min-height:70px;background-color:#cef3be;border:solid thin yellow'>
+ <div id='apriLeTueFinestre' style='position:absolute;width:10%;'><img title='apri le tue finestre' alt='apr le tue finestre' style='width:70px;height:70px' src='http://www.cloc3.net/dokuwiki/lib/exe/fetch.php/apriletuefinestre.jpg?' /></div>
+ <div id='0' style='position:absolute;margin-top:25px;left:13%;width:20%;max-height:1.5em;text-align:left;' onmouseover='collegamento(this)'><a href='' 
+name='/usare_il_wiki'>Come usare questo wiki</a></div>
+ <div id='1' style='position:absolute;margin-top:25px;left:30%;width:20%;max-height:1.5em;text-align:left;' onmouseover='collegamento(this)'><a href='' 
+name='/i_contenuti'>I contenuti</a></div>
+ <div id='2' style='position:absolute;margin-top:25px;left:42%;width:20%;max-height:1.5em;text-align:left;' onmouseover='collegamento(this)'><a href='' 
+name='/progettoSisifo'>Il progetto Sisifo</a></div>
+ <div id='3' style='position:absolute;margin-top:25px;left:60%;width:10%;max-height:1.5em;text-align:left;' '><a href='http://www.paschinimarchi.it/archivio_dokuwiki' target='blank' name='archivio_dokuwiki'>l' archivio</a></div>
+ <div id='4'
+ style='position:absolute;margin-top:25px;left:75%;width:10%;max-height:1.5em;;text-align:left;'
+ onmouseover='fuga(this)'><a href=''
+ name='casa_del_zan8'>la pagina del grullo</a></div>
+</div>
+<div id='pampalugo' style='display:none'>5</div>
+<br>
+</html>
+Questo [[http://wiki.splitbrain.org | dokuwiki]] è messo a disposizione degli studenti del [[http://www.paschinimarchi.it | Liceo Paschini di Tolmezzo
+]].\\
+
+Il **wiki** è uno spazio per produrre documenti in forma collaborativa.\\
+Cioè lavorando insieme.\\
+Nella scuola, può essere utilizzato per esporre in  modo ordinato una parte del lavoro quotidiano.\\
+Dare ordine alle idee permette di riconoscere ed utilizzare meglio i contenuti.\\
+Con la speranza di farne strumento utile a esprimere e documentare aspetti di **quotidianità** dell'esperienza scolastica.
+
+<html><!--
+Un wiki è un [[sito dinamico]]. Dare vita a un sito dinamico, nella scuola, implica un insieme di problemi non esattamente lineari.\\
+Ma, **per una scuola**, un sito internet che non sia dinamico non serve assolutamente a nulla.\\
+Quindi, vale la pena provare.
+--></html>
+
+
+=):-D:-P

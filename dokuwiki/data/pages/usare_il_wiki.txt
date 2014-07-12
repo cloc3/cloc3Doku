@@ -1,0 +1,12 @@
+====== Istruzioni d'uso ======
+
+Questo wiki può essere letto da chiunque conosca il link.
+
+Per scrivere, invece, è necessario essere utenti iscritti.\\
+Per adesso, sono utenti iscritti gli studenti delle classi 3A, 4A, 4B, 4C, 5A e 5B del Liceo Paschini.
+
+Tutti gli utenti iscritti possono accedere attraverso la pagina di login e modificare i contenuti del wiki.\\
+Per pubblicare nuovi contenuti bisogna rispettare alcune semplici regole di sintassi, che potete scoprire leggendo il link associato all'icona in basso a sinistra, sul fondo pagina.\\
+Oppure si può consultare la [[https://www.dokuwiki.org/it:syntax|documentazione ufficiale]] del dokuwiki.
+
+Sui wiki tutti possono scrivere liberamente, senza paura di commettere errori o dire banalità. Perché è facile correggere le inesattezze o arrichire i contributi degli altri. Inoltre, ogni eventuale correzione impropria, può essere facilmente eliminata ripristinando le versioni precedenti dei documenti, un po' come accade su wikipedia.

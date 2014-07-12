@@ -1,0 +1,9 @@
+====== Sintesi Conclusiva ======
+|[[La presentazione del docente]]  | |||
+^  [[sintesi_abstract|L'abstract]]  |  [[sintesi_imparare_arduino|Imparare ad usare Arduino]]  ^  [[sintesi_Monitor|Il monitor web]]  |  [[sintesi_esperimenti|Gli esperimenti]]  | 
+===== Classe 4A =====
+^  [[4a_arduino|Imparare ad usare Arduino]]  ^  [[4a_Monitor|Il monitor web]]  ^  [[4a-esperimenti|Gli esperimenti]]  |
+===== Classe 4B =====
+|  [[4b_abstract|L'abstract]]  ^  [[4b_arduino|Imparare ad usare Arduino]]  ^  [[4b_Monitor|Il monitor web]]  ^  [[4b_esperimenti|Gli esperimenti]]  ^
+===== Classe 4C =====
+^  [[4c_abstract|L'Abstract]]  |  [[4c_arduino|Imparare ad usare Arduino]]  ^  [[4c_Monitor|Il monitor web]]  |  [[4c_esperimenti|Gli esperimenti]]  |

@@ -1,0 +1,21 @@
+=====Progettiamo con Arduino=====
+
+Una resistenza fotosensibile è un dispositivo elettronico che costa massimo un euro.\\
+Anche un diodo è un dispositivo elettronico molto comune, che costa massimo un euro.\\
+In elettronica, la fotoresistenza è un //input//, mentre il diodo è un //output//.
+
+Nel filmato sotto, il diodo pulsa come il cuore di un passerotto racchiuso in un pugno, appena la fotoresistenza viene coperta con la mano.
+
+{{ :pnlug:fotoresistenza.mp4|800x450|loop,autoplay }}
+
+\\  \\ Quando la fotoresistenza è tenuta al buio, si interrompe il segnale in input, però il diodo incrementa la frequenza di pulsazione.\\
+Perché la trasmissione tra l'input e l'output non è diretta, ma mediata da un //processo// arbitrario.\\
+Ebbene, **Arduino è questo processo**.
+
+[[http://arduino.cc|Arduino]] è una scheda elettronica con un microcontrollore e circuiteria di contorno, capace di gestire un insieme di dispositivi elettronici come sensori, controllori di luci, piccoli motori e dispositivi di comunicazione. Arduino è dotato anche di canali di trasmissione dati verso elaboratori esterni e di un ambiente di sviluppo integrato per la programmazione.
+
+Con queste caratteristiche, Arduino standardizza le funzionalità assolte fino a pochi anni fa dai cosidetti sistemi integrati (embedded), che erano appannaggio esclusivo dei produttori industriali e degli amatori più abili ed esperti, per metterli a disposizione di un pubblico più vasto, che si estende dal piccolo appassionato, allo studente, fino all'artigiano professionista.
+
+**Tutto il software a corredo di Arduino è libero**, e gli schemi circuitali sono distribuiti come **hardware libero**.
+
+Nato da tecnologia di paternità italiana, Arduino sarà dotato, nel prossimo futuro, di processori di fabbricazione Intel, ma continuerà ad essere distribuito sul mercato con le modalità aperte **imposte** dai suoi progettisti originari, celebrando nel migliore dei modi un successo di pubblico e di mercato esaltante e vertiginoso.

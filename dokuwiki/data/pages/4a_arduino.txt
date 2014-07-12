@@ -1,0 +1,18 @@
+====== Usare Arduino ====== 
+
+
+Arduino è una scheda elettronica di piccole dimensioni che serve per gestire input e output con dei sistemi fisici, come ad esempio il computer, il led e gli accelerometri.\\ Con arduino si possono realizzare piccoli circuiti elettronici per il controllo della luce, attraverso un led, e la velocità delle onde, attraverso gli accelerometri.
+
+**Definizione di input e output**\\
+Sono i canali presenti sulla scheda che permettono di scambiare informazioni.\\ Gli **input** sono i dati che il sistema riceve in ingresso, nel nostro caso l'input è una resistenza fotosensibile che registrando l'intensità luminosa trasmette il segnale all'output; mentre gli **output** sono i dati che il sistema trasmette verso l'esterno.
+
+**Fotoresistenza**\\
+Componente elettronico la cui resistenza è inversamente proporzionale alla quantità di luce che lo colpisce. Si comporta come un tradizionale resistore, ma il suo valore in OHM diminuisce mano a mano che aumenta l'intensità della luce che la colpisce. Ciò comporta che la corrente che transita attraverso tale componente è proporzionale all'intensità di una sorgente luminosa. In pratica se la luce è sufficientemente forte il suo valore in OHM è vicino a zero, man mano che la luce diminuisce il suo valore aumenta fino alla resistenza massima.
+
+ 
+**Accelerometro**\\
+Strumento per la misura delle accelerazioni che collegato al web, tramite una porta, è in grado di rilevare le onde sismiche e di riprodurle graficamente. Nella maggior parte degli accelerometri, il principio di funzionamento si basa sulla rilevazione dell'inerzia di una massa quando viene sottoposta ad un'accelerazione.
+
+===== Applicazioni di arduino =====
+Abbiamo creato un primo programma per far sì che il led lampeggi;
+

@@ -1,0 +1,3 @@
+|  {{ :saldatura1.jpg?direct&250 |}}  |  {{ :saldatura2.jpg?direct&140 |}}  |  {{ :saldatura3.jpg?direct&250 |}}  |
+|  {{ :saldatura4.jpg?direct&250 |}}  |  {{ :saldatura5.jpg?direct&140 |}}  |  {{ :saldatura6.jpg?direct&140 |}}  |
+|  {{ :saldatura7.jpg?direct&250 |}}  |  {{ :saldatura8.jpg?direct&140 |}}  |  {{ :saldatura9.jpg?direct&250 |}}  |

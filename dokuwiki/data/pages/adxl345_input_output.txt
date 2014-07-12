@@ -1,0 +1,24 @@
+====== Il dialogo con il terminale ======
+Dopo aver capito come si costruisce un [[adxl345_sketch_artigianale|driver]] che consente ad arduino di accedere in lettura all'accelerometro, è possibile occuparsi del dialogo tra arduino e il computer.
+
+Arduino, infatti, può essere collegato al computer usando una connessione usb, secondo un protocollo chiamato **porta seriale**.\\
+Usando il comando di terminale:
+
+  * cat /dev/arduino
+
+Si ottiene un flusso di dati stampati da arduino secondo le istruzioni impartite attraverso lo sketch corrente.\\
+Il flusso creato da cat, tuttavia, è infinito e si interrompe solamente se la connessione usb viene interrotta fisicamente, staccando il cavetto di collegamento.
+
+Sarebbe molto più comodo, invece, generare un dialogo che permetta di acquisire da arduino una quantità finita di letture successive dall'accelerometro.\\
+Per fare questo, tuttavia, è necessario introdurre un insieme di modifiche agli sketch che non abbiamo avuto il tempo di analizzare integralmente in classe.
+
+Ci siamo, limitati, quindi, prelevare da [[https://github.com/cloc3/arduGiochi/archive/dueAccelerometri.zip|questo indirizzo]] gli sketch pronti e imparare ad usarli. Una volta compilato, lo sketch((contenuto nella cartella dueAccelerometri)) permette di acquisire dati con questi due comandi:
+
+  * exec 5<>/dev/arduino # comando indispensabile per sincronizzare l'accesso in lettura e scrittura verso arduino, evitando ritardi
+  * head -n 100 </dev/arduino & echo 100 >/dev/arduino # doppio comando che contiene una operazione di lettura e una richiesta di un certo numero di dati.
+
+Il numero 100 è arbitrario e può essere sostituito con qualunque altro numero intero. Rappresenta il numero delle letture richieste all'accelerometro.\\
+Il comando **head** legge le prime n righe((in questo particolare esempio 100 righe)) prelevate dall'input((in questo caso /dev/arduino)).\\
+Il comando **echo** stampa la stringa successiva((in questo caso il numero 100)) nel dispositivo di output((in questo caso /dev/arduino)).
+
+In classe abbiamo imparato anche a redirigere i dati in un file con estensione [[http://it.wikipedia.org/wiki/Comma-separated_values|cvs]], a trasferirlo con netcat su un computer remoto e a leggerlo ed analizzarlo comondamente con **libreoffice --calc**

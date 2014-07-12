@@ -1,0 +1,20 @@
+====== WiildOs ======
+
+{{  :wiildos.png?1000  }}
+
+Certo che già a prima vista si presenta bene ...\\
+Capisci subito che è qualcosa //progettato con amore//.\\
+
+**WiildOs** è un sistema operativo completo, ideato per la scuola.
+>Davvero? È realmente possibile costruirsi un intero sistema operativo in casa, con le proprie mani?
+Sì. Perché è **software libero**. Libertà è anche scegliere come costruire ed organizzare il proprio ambiente di lavoro.\\
+
+[[http://wiildos.wikispaces.com/Pagina+iniziale|WiildOs]] è una distribuzione linux derivata da Ubuntu e mantenuta da un gruppo di insegnanti (e non solo) appassionati di informatica e appassionati dei propri studenti, che hanno dato vita a un movimento diffuso un po' ovunque sul territorio nazionale.
+
+WiildOs è organizzata per //funzioni e per concetti//, per creare un contatto intuitivo tra lo studente e gli strumenti di cui fa uso, evitando i richiami ai brand commerciali a cui siamo troppo spesso costretti a riferirci. Per esempio, se uno studente, per svolgere una attività didattica, desidera registrare o modificare un contenuto audio, invece di cercare un programma con un nome misterioso, come può essere ProTools o Audacity, cercherà un'icona con la chiave //Monta Audio//.
+
+WiildOs possiede anche una ricca sezione dedicata al supporto per le disabilità e alla gestione delle lavagne multimediali su cui la didattica sta investendo in misura imponente in questo ultimi anni.
+
+Per installare WiildOs si può cominciare da [[http://wiildos.wikispaces.com/Scarica|qui]]. È anche possibile creare da sè un cdrom o una chiavetta usb avviabile, ottenendo una distribuzione portatile da tenere nell'astuccio.
+
+Gli studenti del Paschini usano un particolare adattamento della distribuzione ufficiale di WiildOs, che permette di programmare arduino con le modalità acquisite in classe e rivedere il proprio lavoro a casa.

@@ -1,0 +1,3 @@
+====== Monitor Web ======
+E' un programma web in grado di visualizzare graficamente delle informazioni provenienti da un dispositivo esterno quale Arduino.\\
+Per rendere possibile questa connessione abbiamo utilizzato un terminale, imparando un po' alla volta le funzioni fondamentali.Quindi dalla semplice creazione di una cartella siamo passati a comandi più complessi come il trasferimento di dati a una pagina html. Le informazioni ricevute le abbiamo utilizzando Netcat ( [[http://http://www.compago.it/manuali/35-utilita/165-guida-a-netcat.html|Guida a Netcat]] ), un programma server molto semplice che redirige il flusso su internet. 

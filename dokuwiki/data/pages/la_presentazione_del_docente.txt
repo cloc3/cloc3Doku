@@ -1,0 +1,29 @@
+====== Il Progetto del Paschini di Tolmezzo ======
+===== Una esperienza di didattica libera =====
+
+È un piacere partecipare a questa Giornata di Formazione Specialistica associata al Progetto Sisifo.
+
+:-)
+
+Noi, insegnanti e studenti del Liceo Pio Paschini di Tolmezzo, //ringraziamo// gli organizzatori che hanno creato per noi questa opportunità e tutti i presenti che danno corpo alla manifestazione. Tra di essi, ringraziamo in particolare quelli che sono studenti e, con loro, tutti gli altri studenti che, pur non fisicamente presenti in questo luogo e in questo momento, hanno comunque preso parte ad alcune fasi del nostro lavoro.
+
+Davvero, questo progetto Sisifo è stato, qui a Tolmezzo, una piccola avventura, che abbiamo provato a //documentare// in rete aprendo uno spazio interattivo, accessibile attualmente all’indirizzo privato www.cloc3.net. Sarà oggi compito dei ragazzi illustrarla negli elementi essenziali, mentre gli insegnanti riserveranno per sé meramente il ruolo di semplici ciceroni.
+
+Vogliamo interpretare questa presentazione con umiltà, come un'esperienza e come un esercizio, di quelli ad un tempo difficili ma molto, molto istruttivi. La cultura scientifica, infatti, non è solo ciò che si fa, ciò che si studia e ciò che si impara, ma è anche partecipazione a una //Comunità//. Fare, scienza, cioè, non significa solo sapere, ma anche saper raccontare, saper condividere e saper comunicare.
+
+Se volessimo anticipare un attimo qualcosa di ciò che gli studenti proveranno a raccontarci, potremmo dire che questo Progetto Sisifo ci ha preso molto, che ci ha divertito, che ha impegnato il nostro tempo scuola in un modo esteso, ma soprattutto che, sorprendendo persino noi stessi, ci è riuscito relativamente //facile//. Forse perché abbiamo voluto riferire costantemente il nostro lavoro all’uso di hardware aperto e di software libero.
+
+È hardware aperto quando acquisisci, insieme al dispositivo prescelto, anche le //istruzioni// per farne uso a basso livello. Cioè le specifiche del produttore((noi siamo proprio andati a **leggerle**, in lingua)), che sono dette anche, con un termine inglese, “datasheet”.\\
+Usare hardware aperto ha tre vantaggi:
+
+  - che hai acquistato il prodotto tecnologicamente più avanzato sul mercato;
+  - che hai acquistato al prezzo migliore;
+  - che sei certo di riuscire ad **imparare rapidamente** ad usarlo.
+
+In questo settore, infatti, l’apprendimento, grazie a un preciso meccanismo virtuoso di mercato, è un interesse condiviso tra il produttore e il proprio acquirente, tanto che, per i nostri studenti, usare gli accelerometri di basso costo è stato un gioco da ragazzi.
+
+Nella scuola, l’apprendimento non è un valore economico, ma una missione istituzionale.\\
+Perciò, dovrebbe essere proprio una //esigenza//.\\
+Cioè, la scuola avrebbe tanto, tanto bisogno di fare un gran uso di **software libero** e **hardware aperto**.
+
+prof. Marco Clocchiatti

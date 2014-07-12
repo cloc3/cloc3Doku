@@ -1,0 +1,102 @@
+======= Input e Output =======
+
+Un [[gli_sketch|led]], per arduino, è un dispositivo di **output**.\\
+Accenderlo o spengerlo, infatti, corrisponde a una operazione di //scrittura//, ed è eseguito dalla funzione di sistema [[http://arduino.cc/en/Reference/DigitalWrite|digitalWrite()]].
+
+Arduino, però è un sistema capace di dialogare in modo completo con l'ambiente esterno, acquisendo informazioni attraverso sensori di ogni genere e tipo.\\
+I sensori sono dispositivi di **input**.
+
+Un sensore acquisisce una informazione dall'esterno. Arduino prima elabora l'//input//, eseguendo le istruzioni che il programmatore ha definito preventivamente e poi produce, in //ouput// delle azioni conseguenti, come ad esempio l'accensione o lo spegnimento di una luce. L'esempio della resistenza fotosensibile [[arduino| citato in precedenza]] descrive esattamente questo processo. Ora vogliamo seguire nel dettaglio un percorso per realizzarlo concretamente.
+
+La prima cosa da fare è comprendere il funzionamento di un input, come una resistenza fotosensibile, incominciando dal circuito fisico e studiando poi il codice di base.
+
+===== L'hardware =====
+
+[[http://www.gioblu.com/tutorials/sensori/135-fotoresistenze-o-ldr-o-cds-con-arduino|{{http://www.megalab.it/images/contents2/41102/big.jpg?150  }}]]
+
+Questa è la nostra **fotoresistenza**.
+
+>Sembra una stufetta!!!
+> 
+
+Sì. :-). È proprio una stufetta, ma all'//incontrario//. Anziché prelevare energia da un circuito elettrico ed emetterla nell'ambiente, funziona esattamente a rovescio. Un sensore fotosensibile è un dispositivo capace di raccogliere energia dalla luce esterna((un po' come le foglie degli alberi)) e introdurla in un circuito sotto forma di corrente. La forma a serpentina serve per aumentare la superficie di scambio con l'ambiente.\\
+Bisogna dire però che l'elettronica non descrive i sensori di luce in questi termini, perché le correnti elettriche in gioco sono molto piccole e difficili da misurare.
+
+Tuttavia, in elettronica si possono misurare facilmente i **livelli di potenziale**.\\
+Perciò si ricorre ad alcune semplificazioni pratiche, che risultano però molto funzionali.
+
+Quando il sensore è oscurato((per esempio con un cappuccio)) e non riceve luce dall'ambiente, oppone una grande resistenza al passaggio della corrente. Se invece, il sensore viene illuminato, la corrente immessa nel circuito può far credere che la resistenza del sensore sia improvvisamente diminuita. In elettronica, il valore di una resistenza può essere confrontato con quello di un'altra resistenza fissa, con un dispositivo apposito chiamato **partitore di tensione**, che proviamo a descrivere qualitativamente nel seguito.
+
+===== Il partitore di tensione =====
+
+Osserviamo i due circuiti gemelli nell'immagine:
+
+[[http://www.gioblu.com/tutorials/sensori/135-fotoresistenze-o-ldr-o-cds-con-arduino|{{  http://digilander.libero.it/Brainbastard/images/LdrUp_down.jpg?300  }}]]
+
+Rappresentano i due modi equivalenti di collegare in serie due resistenze, una fissa e una variabile - la nostra fotoresistenza.\\
+Agli estremi del circuito possiamo collocare un punto di alimentazione((5 Volt)) e un livello di terra.\\
+Il punto **V**, centrale tra le due fotoresistenze corriponde a un livello di **potenziale variabile**.
+
+Per capirlo, guardiamo ad esempio il circuito sulla sinistra. La corrente elettrica fluisce partendo dal nodo di alimentazione a 5 Volt e poi attraversa la resistenza fotosensibile.\\
+Il punto **V**, collocato a valle della prima resistenza, corriponde a un valore inferiore a 5 volt, che dipende dal rapporto tra le misure delle due resistenze in gioco. Uno studente di quinto anno potrebbe facilmente trasformare in formule queste idee, ma per il momento proveremo a ragionare con strumenti del tutto //qualitativi//.\\
+Supponiamo ad esempio che le due resistenze siano perfettamente uguali. Possiamo intutire che, in questo caso, il punto **V** corriponderebbe a un potenziale di **2,5 V** esatti, perchè siamo a metà strada in un percorso che scende da un livello di **5 Volt**, fino a terra.\\
+Se però la fotoresistenza fosse ben illuminata, avrebbe certamente un valore molto più piccolo della resistenza fissa. La differenza di potenziale ai capi della fotoresistenza, dunque, sarebbe molto piccolo, come se fossimo scesi di un solo pianerottolo dalle scale di un grattacielo.\\
+Se, al contrario, la fotoresistenza venisse oscurata, il salto di potenziale sarebbe molto grande e il punto **V** scenderebbe ad un'altezza vicina a terra.
+
+In altre parole, misurare il potenziale nel punto **V** permette di fare un //confronto// tra le due resistenze. Se **V** è grande, cioè vicino a 5V, significa che la fotoresistenza è molto bassa e quindi è ben illuminata. Se **V** è piccola, invece, significa che la resistenza fotosensibile è elevata e che quindi è in stato di oscurità.
+
+===== Il Codice =====
+
+Per progettare un programma che utilizza l'input della fotoresistenza, è necessario scegliere contestualmente anche qualche azione di ouput.\\
+Una cosa particolarmente immediata è istruire arduino a stampare il valore rilevato in input sulla porta seriale, cioè attraverso il cavetto usb che si può usare sia per l'alimentazione che per scambiare dati con un computer esterno. Questo è il codice minimale:
+
+  $ cat inputSeriale.ino
+
+  #define FOTORESISTENZA 0 //canale fisico di lettura
+  #define RITARDO 1000     //ritardo tra una lettura e la successiva, utile per non sovraccaricare eccessivamente il sistema
+  
+  int lettura; //variabile intera, necessaria per memorizzare il valore di input.
+  
+  void setup(void)
+  {
+    Serial.begin(115200);  // Impostazione della velocità della porta seriale (il canale usb di comunicazione).
+  }
+  
+  void loop(void)
+  {
+    lettura=analogRead(FOTORESISTENZA);            // lettura dell'input
+    Serial.print("lettura misurata = ");    // stampa di una stringa, senza ritorno a capo
+    Serial.println(lettura);                // stampa del valore letto, con successivo ritorno a capo, per comodità di lettura.
+    delay(RITARDO);
+  }
+
+===== La stampa dei dati =====
+
+Per leggere i valori calcolati, è necessario effettuare una stampa sul terminale.\\
+Dal punto di vista del calcolatore al quale abbiamo connesso la porta usb, arduino è un dispositivo esterno.\\
+Il sistema operativo //Linux// assegna a ciascun dispositivo esterno un percorso riservato, all'interno di una directory chiamata **/dev**.\\
+Nella configurazione del nostro sistema, questo percorso è **/dev/arduino**.\\
+Per leggere l'ouput di arduino si può usare il comando [[cat]], che è lo stesso che usiamo normalmente per leggere un qualunque file del sistema:
+
+  $ cat /dev/arduino
+  lettura misurata = 838
+  lettura misurata = 823
+  lettura misurata = 835
+  lettura misurata = 613
+  lettura misurata = 332
+
+Si tratta di numeri interi, conpresi nell'intervallo tra 0 e 1023.\\
+Infatti, arduino legge le differenze di potenziale con una precisione a 10 bit.\\
+Il valore 1023 corrisponde a una tensione di 5 Volt.\\
+Il valore 1 corrisponde a una tensione di circa 5*10^-3 Volt((è il cosidetto valore meno significativo, indicato spesso con il simbolo LSB)).
+
+Giocando con la nostra fotoresistenza, ci siamo accorti che letture reali variavano da circa 900 LSB (in piena luce) a circa 70 LSB (con il cappuccio).
+
+==== Altri programmi ====
+
+Alla lunga leggere numeri sul terminale diventa noioso.\\
+Perchè non inventare qualche altra possibile azione di //output//?
+
+Allora abbiamo pensato di riutilizzare il led e abbiamo creato due programmi, uno per imparare le istruzioni di scelta e uno per imparare ad usare qualche istruzione ciclica.
+
+^  [[if|istruzioni di scelta]]  |  [[for|Controllo della frequenza del led]]  ^

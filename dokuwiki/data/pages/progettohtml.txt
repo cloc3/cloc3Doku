@@ -1,0 +1,21 @@
+===COSTRUIRE UNA PAGINA .html ===
+
+Cos'è una pagina .html?
+Da Wikipedia, l'enciclopedia libera.
+L'HyperText Markup Language (HTML) (traduzione letterale: linguaggio a marcatori per ipertesti), in informatica è il linguaggio di markup solitamente usato per la formattazione di documenti ipertestuali disponibili nel World Wide Web sotto forma di pagine web.
+
+È un linguaggio di pubblico dominio, la cui sintassi è stabilita dal World Wide Web Consortium (W3C), e che è derivato da un altro linguaggio avente scopi più generici. ([[http://it.wikipedia.org/wiki/HTML]])
+
+
+Gli elementi strutturali che compongono la pagina sono tre e sono:\\
+  - Elenco numerato Una struttura che segue le regole dell'.html che possiamo trovare nelle specifiche diodati ([[http://www.diodati.org/w3c/html401/index/elements.html]])
+  - Un foglio di stile con regole CSS che troviamo in: 
+
+  - foglio di stile  con regole css
+  - animazioni trovate in javascript ...
+I riferimenti per trovare le regole per creare una pagina html:\\
+  * [[http://www.diodati.org/w3c/html401/index/elements.html]] cliccando sull'elemento desiderato troviamo le istruzioni per utilizzarlo. (Ancora per esempio serve per creare collegamenti. <a href="http://...."> >pippo</a>\\
+  * il secondo riferimento sono i fogli di stile: [[http://www.w3.org/TR/CSS2/propidx.html]]\\
+  * per inserire un'animazione: \\
+
+Apro il programma **Kate** che è molto comodo metterlo su due colonne (andando su visualizza dividi vista) così possiamo lavorare su due file differenti. Per inserire l'animazione all'interno del body aggiungiamo la funzione <script type="text/javascript" src(source)="js/script.js"> </script>. A questo punto sulla colonna di destra scrivo il percorso src="js/script.js", creiamo una cartella js con all'interno un file script. Sulla destra quindi troviamo la descrizione di una funzione: **function cambiaSfondo(divisione) { division.style.backgroundColor="lime"}**. Per farlo funzionare abbiamo bisogno, nel <div dentro la divisione colonna sinistra mettiamo un attributo in più e mettiamo il nome del programma **cambiaSfondo(divisione) { division.style.backgroundColor="lime"}**, così abbiamo realizzato la prima animazione che ci cambierà il colore. 

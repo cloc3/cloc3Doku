@@ -1,0 +1,71 @@
+**Cos'è l'arduino?**
+
+In generale:
+
+  * Arduino pensato per accendere o spegnere le luci secondo alcuni comandi cambiando la velocità, la frequenza e la luminosità  
+  * è caratterizzato da una relazione tra input et output:
+  * Gli input sono i dati che il programma riceve in ingresso mentre gli output sono i dati che il programma trasmette verso un soggetto terzo. 
+
+Arduino è una schedina elettronica con un microcontrollore
+e circuiteria di contorno, utile per creare rapidamente
+prototipi e per scopi hobbistici e didattici. Con Arduino si
+possono realizzare in maniera relativamente rapida e
+semplice piccoli dispositivi come controllori di luci, di
+velocità per motori, sensori di luce, temperatura e umidità e
+molti altri progetti che utilizzano sensori, attuatori e
+comunicazione con altri dispositivi.
+L'arduino è un dispositivo che gestisce un sistema di input e
+output. Nel nostro caso l'input è una resistenza fotosensibile
+che registrando l'intensità luminosa trasmette il segnale
+all'output, una lampadina, che in base a quest'ultimo
+lampeggia più o meno velocemente.
+Il nosto arduino è formato da una scheda e una tavoletta
+millebuchi.
+La corrente giunge dal computer tramite una porta USB, e
+attraverso dei cavi la passa alla tavoletta millebuchi(max 5
+V). Qui il rame porta i 5V al canale “+” qui la corrente si
+sviluppa in verticale raggiungendo la resistenza
+fotosensibile variabile. In quanto è variabile può avere
+resistenze diverse e quindi dopo che l'energia passa per
+questa , essa va ricalcolata. Questo processo viene letto da
+arduino attraverso il canale 0.
+Da qui passa attraverso la resistenza fissa,che porte la
+corrente a terra attraverso il canale “-”.
+Quando il segnale arriva ad arduino, lo legge e calcola la
+differenza di potenziale. Poi elabora i dati ricevuti e li
+trasmette con un output al led, che si illumina in base ai
+rilevamenti che precedentemente aveva assimilato la
+fotoresistenza.
+
+
+Hardware:
+
+  * scheda elettronica
+  * microcontrollore
+  * circuiteria
+
+Arduino è una scheda elettronica di piccole dimensioni con un microcontrollore e circuiteria di contorno, utile per creare rapidamente prototipi e per scopi hobbistici e didattici.
+Il nome della scheda deriva da quello di un bar di Ivrea (che richiama a sua volta il nome di Arduino d'Ivrea, Re d'Italia nel 1002) frequentato da alcuni dei fondatori del progetto[1].
+Con Arduino si possono realizzare in maniera relativamente rapida e semplice piccoli dispositivi come controllori di luci, di velocità per motori, sensori di luce, temperatura e umidità e molti altri progetti che utilizzano sensori, attuatori e comunicazione con altri dispositivi. È fornito con un semplice ambiente di sviluppo integrato per la programmazione. Tutto il software a corredo è libero, e gli schemi circuitali sono distribuiti come hardware libero.
+
+Software: 
+
+  * applicazione
+  * linguaggio di programmazione processing
+  * wiring
+
+L'ambiente di sviluppo integrato (IDE) di Arduino è un'applicazione multipiattaforma scritta in Java, ed è derivata dall'IDE creato per il linguaggio di programmazione Processing e per il progetto Wiring. È concepita per iniziare alla programmazione artisti e altri neofiti, che siano a digiuno di pratica nello sviluppo di software.Per permettere la stesura del codice sorgente, l'IDE include un editore di testo dotato inoltre di alcune particolarità, come il syntax highlighting, il controllo delle parentesi, e l'indentazione automatica. L'editor è inoltre in grado di compilare e lanciare il programma eseguibile in una sola passata e con un solo click. In genere non vi è bisogno di creare dei Makefile o far girare programmi dalla riga di comando.
+
+L'ambiente di sviluppo integrato di Arduino è fornito di una libreria software C/C++ chiamata "Wiring" (dall'omonimo progetto Wiring): la disponibilità della libreria rende molto più semplice implementare via software le comuni operazioni di input/output. I programmi di Arduino sono scritti in C/C++, ma all'utilizzatore, per poter creare un file eseguibile, non è richiesto di scrivere un programma in C, ma solo di definire due funzioni:
+
+    setup()
+
+    – funzione invocata una sola volta all'inizio di un programma che può essere utilizzata per i settaggi iniziali;
+
+    loop()
+
+    – funzione invocata ripetutamente, la cui esecuzione si interrompe solo con lo spegnimento della scheda.
+
+
+
+

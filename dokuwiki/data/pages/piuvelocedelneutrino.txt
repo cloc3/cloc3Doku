@@ -1,0 +1,267 @@
+====== Misura della velocità del neutrino con il rivelatore OPERA nel fascio CNGS ======
+Giovedì 22 settembre 2011, l'esperimento Opera presso la linea sperimentale CNGS (CERN Gran Sasso) ha pubblicato un
+documento ufficiale che descrive una misura che ha avuto un esito particolarmente sorprendente.
+
+Per la prima volta nella storia della Fisica, infatti, **sarebbe** stato osservato un fenomeno di spostamento a una velocità
+superiore a quella della luce.
+
+===== Ci dobbiamo credere? =====
+Notizie di questa portata non possono essere trascurate facilmente. Tuttavia, prima di accettare un evento di questo
+genere come fatto acclarato, bisogna usare molta prudenza. Non è la prima volta, infatti, che le riviste patinate di
+divulgazione scientifica strillano novità eclatanti simili a quella attuale ma, in precedenza, si è sempre trattato di
+manipolazioni giornalistiche improprie basate su fenomeni associabili all'indeterminazione quantistica.
+
+Bisogna sapere infatti che la Fisica Moderna è fondata su due teorie parallele che interagiscono tra di loro. La prima è la
+teoria della relatività e la seconda è la Meccanica Quantistica. La Meccanica Quantistica è una teoria intrinsecamente
+incompleta e  cosente, in qualche caso((il paradosso di Einstein Podolsky Rosen è un paradigma di questo tipo di
+fenomenologie)), di realizzare dei fenomeni illusori, che la stampa, a volte, reinterpreta impropiamente come
+superamenti della velocità della luce.
+
+Si può capire, quindi, quanto possa essere pericoloso fare didattica con le notizie di cronaca, rischiando
+letteralmente di essere trascinati in fraintendimenti clamorosi.
+
+  * Le notizie del febbraio 2012, poi, hanno aggiunto un nuovo argomento al "Ci dobbiamo credere?" intorno a cui stiamo discutendo. Infatti sono state diffuse voci relative a possibili anomalie riscontrate nell'acquisizione dei dati. Ma non sempre l'informazione giornalistica ha saputo descrivere correttamente lo stato dei fatti. Noi ci prendiamo qui una [[o quasi|paginetta]] separata per discuterne insieme.
+
+===== Facciamo le nostre verifiche! =====
+
+Come uscirne, allora?\\
+Ebbene sì, l'unica strada possibile è evitare di acquisire le informazioni esclusivamente in modo indiretto: certi eventi
+devono essere **verificati alla fonte**.
+
+Fortunatamente, il gruppo sperimentale Opera che ha eseguito le sperimentazioni distribuisce la propria
+[[http://arxiv.org/pdf/1109.4897v1|documentazione]] ufficiale su un [[http://www.nu.to.infn.it/exp/all/opera|sito]] in
+rete che può essere reperito anche
+dalle pagine di wikipedia.
+
+A partite da sabato 24 settembre, le classi 1A,1B,2B,3A,3B,3C e 4B((GULP! sette classi???)) hanno discusso i risultati
+dell'esperimento Opera al Gran Sasso sulla base di un estratto della letteratura originale.\\
+Quanto segue è cronaca di un insieme di lezioni realmente tenute, in forma di discussione, con la partecipazione degli studenti.
+
+Sì, però. Il documento originale conta 24 pagine, fitte di tecnicismi inavvicinabili per uno studente di scuola
+superiore.\\ Ma con un po' di pazienza, selezionando con calma le cose accessibili, qualcosa di interessante si
+riesce sicuramente a trovare.\\
+Per esempio. Una pubblicazione scientifica possiede una struttura formale rigida molto elementare, che obbliga ad
+esporre i concetti con parole comprensibili a tutti.\\
+
+=== I nostri materiali ===
+
+Noi abbiamo scelto di leggere la pagina 1, la pagina 3, la pagina 21 e la pagina 22 del documento.\\
+Ovvero: frontespizio, abstract e conclusioni.\\
+{{:misuradellavelocitadelneutrino-estratto.pdf|Ecco l'estratto}}.
+
+=== Il frontespizio ===
+Il frontespizio contiene un titolo e una lista di nomi.
+
+Il titolo è in inglese. Ci sarebbe da ridire. Ma la documentazione scientifica ufficiale è sistematicamente depositata in
+lingua inglese. Per comprenderla, bisogna imparare l'inglese o farsi aiutare a tradurre.
+
+Segue una lista di nomi.\\
+Quanti nomi!! quasi 30 righe. La prima riga contiene 6 nomi.\\
+Il prof. Antonio Ereditato, che tutti i giornali celebrano come spokeman((portavoce)) dell'esperimento, è citato alla
+settima riga, in ordine alfabetico rigoroso.
+
+La Fisica, infatti, non è una disciplina assiomatica, fondata su verità depositate e trascritte nei libri di testo,
+ma vive e si modifica quotidianamente attraverso l'impegno di coloro che la studiano e la discutono liberamente,
+confrontandosi alla pari.
+
+=== L'abstract ===
+
+**Abstract** significa proposta.
+
+//The OPERA neutrino experiment at the underground Gran Sasso Laboratory **has measured**...//
+
+//L'esperimento [[http://en.wikipedia.org/wiki/Opera_Experiment|Opera]] sul [[neutrino]], presso le gallerie del Gran Sasso ha misurato...//\\
+Non capisco: che cosa c'è da proporre, se la misura è già stata fatta?
+
+In verità, il percorso burocratico obbligatorio di un esperimento prevede non una, ma due proposte.\\
+Con la prima proposta, cioè con il primo abstract, lo scienziato (o il grupppo di ricerca) si rivolge alla comunità
+scientifica per ottenere il consenso a realizzare l'esperimento desiderato.\\
+"Ho pensato di fare un nuovo esperimento così e così, sareste disposti a concedermi il tempo e le risorse necessarie per condurlo a termine?"
+
+La seconda proposta, invece, viene sottomessa al termine dell'esperimento. Con essa lo scienziato (o il gruppo di
+ricerca), si rivolge alla comunità scientifica per chiedere il permesso di presentare i risultati del proprio lavoro.\\
+"Vi ricordate ancora di quell'esperimento che mi avevate affidato, tanti anni fa? Ebbene, è finito. Se avete cinque
+minuti, mi piacerebbe mostrarvi i risultati che ho raccolto."
+
+In questo caso ci troviamo di fronte a un abstract del secondo tipo. Cioè alla presentazione di un risultato pronto per
+l'omologazione. Attualmente, la misura non è stata ancora omologata ma, se la Comunità Scientifica riterrà valido il
+lavoro prodotto, darà origine a un risultato universalmente riconosciuto.
+
+Al giorno d'oggi capita raramente che un risultato presentato per l'omologazione venga confutato.\\
+Accadde una volta a un astronomo di nome Ticho Brahe((seguirà documentazione)), che presentò una
+misura di parallasse delle stelle fisse. A suo dire, la misura dimostrava che la Terra è ferma al centro dell'Universo e
+che, di conseguenza, il sole gira attorno ad essa.\\
+Galileo Galilei, che era un suo contemporaneo, confutò il risultato((seguirà documentazione)), asserendo che la misura
+di Ticho Brahe non possedeva requisiti di accuratezza adeguati per apparire significativo.
+
+//The OPERA neutrino experiment at the underground Gran Sasso Laboratory has measured the
+velocity of neutrinos from the CERN CNGS beam over a baseline of about 730 km with **much higher
+accuracy** than previous studies conducted with accelerator neutrinos. The measurement is based on **high-
+statistics data** taken by OPERA in the years 2009, 2010 and 2011.//
+
+//L'esperimento Opera sul neutrino presso le gallerie dei laboratori del Gran Sasso ha misurato la velocità dei neutrini
+provenienti dal fascio CNGS del Cern lungo una linea sperimentale lunga circa 730 Km con **un accuratezza molto
+superiore** dei precedenti studi realizzati con acceleratori di neutrini. La misura è fondata sul **ricco campione
+statistico** raccolto da OPERA negli anni 2009, 2010 e 2011.//
+
+Ecco. Gli scienziati di oggi sono molto più avveduti di Ticho Brahe, e la prima cosa che desiderano porre in chiaro è
+il valore tecnico del proprio lavoro. È ben difficile, quindi, immaginare che il risultato presente possa venire
+smentito durante i controlli di omologazione.\\
+Bisogna smentire invece le molte voci giornalistiche che, alla radio e in tv, affermano che la misura di Opera deve
+essere ripetuta per aumentare la statistica. Ora, sicuramente un risultato così clamoroso darà origine a verifiche ed
+approfondimenti di ogni genere, ma non per ragioni di tipo statistico. Nelle parti descrittive, infatti, è
+specificato che l'esperimento ha utilizzato la produzione di circa 100 miliardi di miliardi di protoni((controllare))
+dai quali sono stati generati circa 16 mila eventi osservabili.
+
+//Dedicated upgrades of the CNGS
+timing system and of the OPERA detector, as well as a high precision geodesy campaign for the
+measurement of the neutrino baseline, allowed reaching comparable systematic and statistical accuracies.//
+
+In questo periodo, il documento descrive sommariamente gli elementi tecnici che hanno contribuito a garantire la qualità
+della misura ottenuta: gli aggiornamenti delle tecnologie di misura di tempo sul fascio del CNGS, gli aggiornamenti al
+rilevatore OPERA((i laboratori del Gran Sasso)) e le attività di misura geodetiche di alta precisione per il calcolo
+delle distanze lungo la linea sperimentale.
+
+//An early arrival time of CNGS muon neutrinos ... was measured.//
+
+uff. L'inglese è un po' come il latino. Per saltarne fuori devi cercare il verbo proprio in fondo alla frase.
+Questo è il periodo più importante di tutto l'articolo. Vale la pena di leggerlo due volte per capirlo a fondo.
+
+//**An early arrival time** of CNGS muon neutrinos with respect to the one computed assuming the speed of
+light in vacuum of (60.7 ± 6.9 (stat.) ± 7.4 (sys.)) ns was measured.//
+
+//La misura ha permesso di osservare un arrivo dei neutrini muonici del CNGS **anticipato**,
+rispetto a quello che si sarebbe dovuto attendere assumendo un movimento alla velocità della luce nel vuoto, di circa 60
+nanosecondi.//
+
+Un arrivo anticipato.\\
+Semplicemente un arrivo anticipato. L'interesse e lo stupore emergono proprio dalla semplicità. Non serve avere alcuna conoscenza di Meccanica Quantistica nè di Filosofia della Scienza. I neutrini sono arrivati un po' prima. Tutto qui.\\
+Una misura diretta. Potrebbe capire persino un giornalista.\\
+Al contrario di tanti annunci precedenti, questo davvero sembra un fatto destinato a lasciare un'impronta indelebile nella Storia della scienza.
+
+E cosa sono questi nanosecondi?\\
+Un nanosecondo è un miliardesimo di secondo. Al giorno d'oggi, 60 nanosecondi è un tempo estremamente lungo, per le
+strumentazioni esistenti, che si può misurare bene. Si pensi ad esempio che un qualunque calcolatore commerciale di basso costo((max 200 euro)), reperibile al supermercato,
+possiede una frequenza di clock uguale o superiore a 1.5 GHz. Che vuol dire un miliardo e mezzo di operazioni al secondo.\\ Tuttavia, considerate le difficoltà oggettive
+nell'inseguimento di un oggetto [[neutrino|sfuggente]] come un neutrino, è comprensibile che i ricercatori abbiano incontrato più
+d'una difficoltà. accanto al dato finale, di conseguenza, sono dichiarati anche gli errori della misura.\\
+L'errore è suddiviso in due parti: 6.9 ns di errore statitistico e 7.4 di errore sistematico.
+
+L'errore statistico è determinato da quelle fonti di errore che si presentano in un forma sempre diversa,
+secondo una distribuzione causale, mentre l'errore sistematico dipende da quegli errori che non
+possono essere eliminati, ma che si presentano sempre nella stessa forma, come il peso del foglio di carta sulla
+bilancia degli affettati.\\
+Nel nostro caso, entrambi gli errori sono quasi una decina di volte più piccoli del valore complessivo.Se i neutrini
+avessero viaggiato all avelocità delle luce, il ritardo sarebbe risultato pari a zero. Con errori così piccoli, la
+differenza tra 60 e zero è una differenza significativa.
+
+=== Le conclusioni ===
+
+Le conclusioni riprendono sinteticamente molti contenuti dell'abstract.
+
+//The OPERA detector at LNGS, designed for the study of neutrino oscillations in
+appearance mode, has provided a precision measurement of the neutrino velocity over the 730 km
+baseline of the CNGS neutrino beam sent from CERN to LNGS through the Earth’s crust. A time
+of flight measurement with small systematic uncertainties was made possible by a series of
+accurate metrology techniques. The data analysis took also advantage of a large sample of about
+16000 neutrino interaction events detected by OPERA.//
+
+//Il rivelatore OPERA presso i Laboratori Nazionali del Gran Sasso, disegnato per lo studio delle oscillazioni del
+neutrino, ha prodotto una misura della velocità del neutrino lungo i 730 chilometri del fascio di neutrini CNGS emessi
+dal Cern verso Gran Sasso [[i neutrini della Gelmini|sotto]] la crosta terrestre. Una misura del tempo di volo con
+piccole incertezze sistematiche è stata resa possibile da un insieme di accurate tecniche di metrologia. L'analisi dei
+dati ha potuto avvalersi di un consistente campione statistico di 16000 interazioni con neutrini rilevati da OPERA.//
+
+//... The sensitivity of the measurement of (v-c)/c is about one order of magnitude better
+than previous accelerator neutrino experiments.//
+
+//La sensibilità della misura del rapporto di (v -c)/c è di circa un ordine di grandezza superiore ai precedenti
+esperimenti condotti con acceleratori di neutrini.//
+
+//The results of the study indicate for CNGS muon neutrinos with an average energy of 17
+GeV an early neutrino arrival time with respect to the one computed by assuming the speed of
+light in vacuum:\\
+δt = (60.7 ± 6.9 (stat.) ± 7.4 (sys.)) ns.//
+
+//Il risultato dello studio segnala, per i neutrini muonic del CNGS con un'energia media di 17GeV, un tempo di arrivo
+anticipato rispetto a quello calcolato assumendo la velocità della luce nel vuoto di 60 nanosecondi.//
+
+//The corresponding relative difference of the muon neutrino velocity and the speed of light
+is:
+(v-c)/c = δt /(TOF’c - δt) = (2.48 ± 0.28 (stat.) ± 0.30 (sys.)) ×10-5.
+with an **overall significance of 6.0 σ**.//
+
+//La conseguente differenza relativa tra la velocità del neutrino e quella della luce nel vuoto è di circa un quarto di
+miliardesimo, con **un eccesso significativo di 6.0 [[deviazioni standard]]**.//
+
+...
+//Despite the large significance of the measurement reported here and the stability of the
+analysis, the potentially great impact of the result motivates the continuation of our studies in
+order to investigate possible still unknown systematic effects that could explain the observed
+anomaly. We deliberately do not attempt any theoretical or phenomenological interpretation of
+the results.//
+
+Anche questa è una frase pregna di enorme valore filosofico ed educativo. Riporta infatti l'atteggiamento degli scienziati di
+fronte a un risultato tanto eclatante. E contemporaneamente risponde anche alla domanda di ciascuno di noi: "Adesso,
+cosa succederà? Allora, tutto ciò che si è studiato fino ad ora è  inutile e deve essere
+rivisto?"\\
+Per capirlo, procediamo scomponendo il testo in parti più brevi:
+
+//Despite the large significance of the measurement reported here and the stability of the
+analysis ...//
+
+//Nonostante il largo valore significativo conseguito dalla misura e la stabilità delle analisi ...//
+
+Gli scienziati sono consapevoli di avere prodotto un risultato tecnicamente molto solido, ma si rendono conto di
+avere toccato un fenomeno estremamente delicato, sotto il profilo teorico.
+
+//..., the potentially great impact of the result motivates the continuation of our studies in
+order to investigate possible still unknown systematic effects that could explain the observed
+anomaly.//
+
+//..., il grande impatto potenziale del risultato ci motiva a continuare i nostri studi per ricercare possibili ulteriori
+fattori di errore sistematico che potrebbero spiegare l'anomalia osservata.//
+
+Prima di tutto, i ricercatori vogliono analizzare più a fondo il risultato per trovare conferme ancora più approfondite
+ed ricercare eventuali criticità ipotetiche della misura.
+
+//We deliberately do not attempt any theoretical or phenomenological interpretation of
+the results.//
+
+//Volutamente, noi non vogliamo neppure provare a esprimere una interpretazione teorica o fenomenologica del risultato
+acquisito.//
+
+Davvero. Il risultato un risultato del genere non può in alcun modo essere ricondotto all'interno degli schemi teorici
+esistenti al giorno d'oggi, e gli scienziati ritengono che, al momento, non sia neppure opportuno provarci.\\
+Alla luce della teoria della relatività di Albert Einstein, infatti, è impossibile realizzare un movimento ad una
+velocità superiore a quello della luce. Un fenomeno che realizza un simile effetto, quindi, è sottratto sistematicamente a qualunque
+descrizione teorica in un modo inconciliabile.
+
+===== Ritorno al futuro =====
+
+Bisogna dire, però, che situazioni di questo genere sono già accadute, nella storia della fisica.\\
+Un esempio potrebbe essere la misura di velocità della luce realizzatta da Roemer((citazione)) nel 1675.\\
+All'epoca si pensava che la luce si propagasse istantaneamente, con una velocità infinita. Questa convizione era così
+radicata che Galileo Galilei ne aveva fatto un presupposto essenziale per la propria teoria della relatività, che oggi
+chiamiamo Galileiana. Nel Dialogo dei Massimi Sistemi, Galileo Gallei analizza criticamente questa assunzione
+descrivendo un vero e proprio esperimento di misura della velocità della luce, che tuttavia non produce esiti
+significativi. Con questa analisi, Galileo mostra manifestamente di essere consapevole che una eventuale futura
+rilevazione di un valore finito per la velocità della luce porterebbe necessariamente alla caduta del proprio modello
+teorico.
+
+Ora, nel 1675, l'ipotesi della propagazione istantanea della luce cade definitivamente, ma la Comunità Scientifica non
+ritiene di rigettare il lavoro di Galileo, per altri 220 anni, fino all'arrivo di Albert Einstein.
+
+Come mai questo è accaduto?\\ Il fatto è che una teoria non può essere invalidata da un singolo risultato. Nel 1675, tutti i
+fenomeni conosciuti erano riconducibili alle teorie Galileiane, tranne uno: la frequenza di rotazione del satellite di
+Giove chiamato Io intorno al proprio pianeta ed osservata da Roemer. Sarebbe stato ragionevole, secondo voi, gettare nel cestino l'intero Dialogo sui
+Massimi Sistemi per causa di un unico satellite?
+
+Quando, molto più tardi, Einstein pubblicò i propri lavori, il panorama scientifico era ben diverso. I fenomeni noti che
+violavano la relatività Galieiana erano molto numerosi ((tutti i fenomeni elettromagnetici)) e stavano sotto gli occhi di tutti.
+Alcuni scienziati avevano proposto delle procedure matematiche di adattamento((equazioni di Lorentz)) che coprivano un sottoinsieme
+ristretto dei fenomeni naturali conosciuti. Albert Einstein fece capire che l'introduzione di una teoria innovativa
+avrebbe ricondotto quelle correzioni all'interno di un contesto di validità universale.
+
+Ahinoi, siamo tornati al 1675. Forse, tra 220 anni, potremo conoscere gli sviluppi e comprendere il significato
+profondo di quello che leggiamo oggi, dal testo originale della documentazione scientifica contemporanea.

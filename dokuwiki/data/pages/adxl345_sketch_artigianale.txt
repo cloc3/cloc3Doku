@@ -1,0 +1,29 @@
+====== Uno sketch costruito leggendo una guida ======
+
+Con il software distribuito da Adafruit((https://github.com/adafruit/Adafruit_ADXL345)), cioè dal produttore dell'accelerometro ADXL345, il sensore funziona immediatamente dopo l'acquisto.
+
+Se però un utente desidera //esplorare da vicino// il funzionamento del dispositivo, allora è il caso di intraprendere un percorso indipendente. **Una buona guida**, in questo caso, può dare grandi soddifazioni. [[http://codeyoung.blogspot.it/2009/11/adxl345-accelerometer-breakout-board.html|Questa]], ad esempio, è scritta con molto buon gusto.\\
+Purtroppo è in inglese, ma lo sforzo vale la candela :-).
+
+Infatti, l'autore non solo fornisce un codice minimale di facile lettura, ma illustra nei dettagli //ogni singolo passaggio//, documentando il testo con citazioni sapienti delle //specifiche ufficiali//.\\
+Al termine della lettura emerge che usare un sensore non è cosa particolarmente complessa, ma si esaurisce in poche operazioni pratiche.\\
+In fondo, per interagire con un sensore, basta:
+
+  * una funzione per accedere in scrittura ai registri dell'accelerometro;
+  * una funzione per accedere in lettura ai registri dell'accelerometro;
+  * un algoritmo per trasmettere i dati attraverso la porta seriale di arduino.
+
+Dalla guida si scoprono anche alcuni segreti riposti sulla struttura interna del sensore.\\
+Gli elementi chiavi da conoscere sono i **registri di memoria** elencati nella tabella 19 di pagina 23, seguita da una descrizione dettagliata di ciascuno di essi.
+
+Sono considerati solo i registri //strettamente indispensabili//.\\
+Per esempio, citando la pagina 10 delle specifiche, è spiegato che il numero identificativo del dispositivo((accessibile al registro **0x0**)) vale **0x53**, per operare in modalità I2C.\\
+L'indirizzo **0x2D**, invece, si usa per accendere e spegnere il dispositivo,
+controllando il consumo energetico.\\
+All'indirizzo **0x32**, infine, incomincia la sequenza di 6 byte da cui si estraggono i valori attuali della misura di accelerazione. //2 byte// per
+ciascun asse.\\
+
+Nella funzione loop avviene la lettura dei dati e la stampa.\\
+La prima operazione è  realizzata con una tecnica interessante, che esegue una trasformazione di formato.
+Si tratta di un'operazione piuttosto particolare, da discutere in classe con l'insegnante.\\
+In fondo alla pagina è sistemato un link per scaricare lo [[http://cookietroll.com/blogfiles/adxl/adxl345_arduino_processing_02.zip|sketch]] finale, che funziona bene, previo //qualche aggiustamento// minore.

@@ -1,0 +1,41 @@
+[size=25]**Monitor Web**[/size]
+-----
+E' un programma web in grado di visualizzare graficamente (Assi **X**, **Y** e **Z**) delle informazioni provenienti da un dispositivo esterno quale Arduino.
+Per rendere possibile questa connessione abbiamo utilizzato un terminale. Le informazioni ricevute le abbiamo trasmesse utilizzando Netcat, un programma server molto semplice che redirige i dati a pacchetto su internet.\\
+
+|  {{ :screen2.png?600 |terminale}}  | {{ :pnlug:dueAccelerometri.mp4|600x300|loop,autoplay }}  |
+
+[size=18]**Raccolta dati**[/size]
+
+Per riuscire a creare un grafico bisogna prima di tutto aprire la porta seriale in lettura e scrittura mantenendola sincronizzata utilizzando un Descriptor per una comunicazione più veloce con il comando:\\
+
+[size=13]**exec 5<>/dev/arduino**[/size] # apre la porta seriale in lettura e scrittura\\
+
+Dopo di che bisogna indicare il numero di dati da inviare volta per volta alla porta prescelta con il comando:\\
+
+[size=13]**head -n4 <&5|sort -r & echo 4 >&5**[/size] # Prima leggere e poi scrivere\\
+
+Dove **__-n4__** indica il numero di dati (in questo caso 4) inviati ogni volta e **__5__** il numero del Descriptor indicato con il comando precedente; il comando **__sort__** invece permette di riordinare i dati che altrimenti verrebbero gestiti in ordine inverso.\\ 
+
+Così facendo abbiamo ottenuto i dati per inviarli ad una porta web, e mantenere aperto il servizio, doppiamo utilizzare un loop while, così scritto: 
+
+[size=13]**while  true;do nc -l -p 8000 -e "handle_req" -q0;done**[/size] # apre il servizio web\\
+
+Qui stiamo inviando i dati utilizzando [[http://netcat.sourceforge.net/|Netcat]] alla porta indicata cioè **__8000__**.\\
+Aprendo in un qualsiasi browser la pagina con indirizzo ip del server e il numero della porta indicata (es. xxx.xx.x.xx:**8000**) e possibile leggere in forma scritta i dati dei vari assi dell'accelerometro, oppure si può utilizzarli accedendo a questa porta.\\
+
+[size=18]**Creazione della rappresentazione grafica**[/size]\\
+
+Per passare dalla rappresentazione numerica a quella grafica degli spostamenti nelle 3 dimensioni è necessario utilizzare uno script, ovvero un programma integrabile in una pagina web, che, nel nostro caso, accedeva alla porta indicata (la porta **__8000__**) riceveva i dati in diretta dall'accelerometro e li tracciava su tre grafici, uno per ogni asse.\\
+In particolare il programma traccia i punti in base alla loro posizione e all'ordine in cui gli vengono forniti dalla porta di input e li unisce con una linea; è inoltre possibile impostare il tempo che impiega un punto per giungere dall'inizio del grafico alla fine di quest'ultimo, ovvero la quantità di grafico visibile contemporaneamente (Una sorta di zoom).\\
+
+
+[size=18]**Applicazioni**[/size]\\
+
+
+la rappresentazione dei dati su un grafico ne rende molto più immediata, anche se meno precisa, la lettura; è inoltre molto più semplice confrontare i dati di più accelerometri.\\
+
+[[http://www.cloc3.net/dokuwiki/doku.php/scaletta_per_mario|Scaletta per Mario]]
+
+      
+          

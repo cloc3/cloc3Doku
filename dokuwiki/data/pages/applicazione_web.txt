@@ -1,0 +1,13 @@
+====== Un monitor web ======
+
+I dati distribuiti in rete da un [[server web]] possono essere raccolti da un qualunque programma cliente.\\
+Nel nostro caso, siccome il server utilizza la porta 8000, ci basta collegarci con un browser all'indirizzo corrispondente, per esempio digitando il comando:
+
+  * firefox 172.16.1.72:8000 # naturalmente, l'indirizzo ip può cambiare secondo le necessità.
+
+Facendo così, però, si raccolgono i dati grezzi, a piccoli pacchetti corrispondenti a 4 letture alla volta.
+
+Per visualizzare questi dati su un monitor, bisogna avere un programma che interroga ripetutamente il server, acquisisce i dati e li riporti su un grafico.\\
+Una pagina web può contenere un programma di questo tipo, scritto in un linguaggio avanzato chiamato javascript.
+
+A scuola abbiamo imparato a usare una pagina web((scaricabile [[https://github.com/cloc3/arduGiochi/archive/dueAccelerometri.zip|qui]])) di questo tipo e a modificarne qualche elemento di particolare utilità, come il parametro che gestisce la velocità di flusso dei dati.

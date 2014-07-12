@@ -1,0 +1,19 @@
+[[http://www.crs.inogs.it|{{ sisifo_paschini.png }}]]
+
+Nel  corso dell'anno scolastico 2013 2014, le classi quarte del Liceo Paschini di Tolmezzo prenderanno parte a un sperimentazione didattica nell'ambito del [[https://sites.google.com/site/ogssisifo|Progetto SISIFO]], in collaborazione con la sezione [[http://www.crs.inogs.it|Centro di Ricerche Sismologiche]] di Udine, appartenente all'[[http://www.inogs.it|OGS-Istituto Nazionale di Oceanografia e di Geofisica Sperimentale]].
+
+Questo dokuwiki vorrebbe //documentare// una parte delle attività che saranno svolte con gli studenti e conterrà materiali costruiti principalmente dagli studenti e dai loro insegnanti.
+
+|  [[sismologia|La sismologia]]  ^  [[sicurezza|La sicurezza]]  |
+^  [[territorio|Il Territorio]] | [[elettronica|Elettronica ed informatica]] ^
+
+----
+\\
+
+In data 7 aprile 2014, le classi quarte del Liceo Paschini parteciperanno, con la presenza di una propria delegazione, ad una [[https://docs.google.com/file/d/0B65JvET8xracQ3ZjZnN6S1ZVb0U|Giornata di Formazione Specialistica ]], per la quale hanno preparato i seguenti materiali:
+
+^  [[Relazioni Finali]]  |
+
+Nei giorni 26 e 27 aprile, l'unità didattica del Liceo Paschini sarà presentata alla [[http://www.radioamatorepordenone.it|Fiera del Radioamatore di Pordenone]].
+
+|  [[fieradelradioamatoreaprile2014|Fiera del Radioamatore - primavera 2014]]  ^

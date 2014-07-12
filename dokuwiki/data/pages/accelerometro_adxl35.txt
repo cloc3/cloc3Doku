@@ -1,0 +1,42 @@
+====== L'accelerometro ADXL345 - cominciare a conoscerlo ======
+
+===== Primo: cercare le informazioni per imparare=====
+
+L'accelerometro ADXL345 è un sensore che si può reperire a costi molto bassi e che può interagire efficacemente con Arduino.
+
+Imparare a utilizzare strumenti di questo genere è un'impresa che richiede un //minimo di esperienza//.\\
+In un contesto didattico, l'esperienza la mette l'insegnante. Gli studenti, da parte loro, **possono cogliere l'occasione** per farsi accompagnare in un percorso ricco di elementi altamente educativi.
+
+Dopo l'acquisto, la prima cosa da fare è una piccola ricerca su Internet.\\
+Ed è già il primo punto dove l'esperienza ha grande importanza.\\
+Non bisogna farsi influenzare troppo da siti commerciali, da filmati o informazioni dispersive.
+
+Bisogna //controllare// sempre la fonte delle informazioni considerate, osservando le date di pubblicazione e valutando il grado di affidabilità. Bisogna essere disposti anche a //leggere l'inglese//.\\
+Le fonti migliori sono quelle riferite ai produttori. Molto spesso risultano raggiungibili dagli stessi siti commerciali, perché il rivenditore ha **sempre interesse** a favorire i possibili acquirenti nelle loro ricerche.
+
+Alla fine della ricerca, bisogna avere raccolto almeno tre tipi di informazione:
+
+  * Le specifiche originali del sensore, rilasciate direttamente dal produttore;
+  * I software rilasciati dal produttore sotto forma di software libero e collocati in appositi archivi;
+  * Qualche guida didattica sufficientemente leggibile.
+
+Nel nostro caso, questi sono stati i riferimenti che abbiamo usato:
+
+|  [[http://www.analog.com/static/imported-files/data_sheets/ADXL345.pdf|Specifiche del produttore]]  ^  [[https://github.com/adafruit/Adafruit_ADXL345|Software libero riconducibile al produttore]]  |  [[http://codeyoung.blogspot.it/2009/11/adxl345-accelerometer-breakout-board.html|Una guida interessante]]  |
+
+===== Secondo: leggere e applicare =====
+
+La scheda dati((datasheet)) dell'accelerometro ADXL345 è lunga 40 pagine. Per fortuna, il nostro insegnante non le ha lette tutte.\\ Di seguito, trascriviamo il primo paragrafo della descrizione generale:
+
+  GENERAL DESCRIPTION
+  
+  The ADXL345 is a small, thin, ultra low power, 3 axis accelerometer with high resolution (13 bit) measurement
+  at up to ±16 g . Digital output data is formatted as 16 bit twos complement and is accessible through either
+  a SPI (3 or 4 wire) or I2C digital interface. 
+
+È piccolo, sottile, consuma poco, legge nelle tre dimensioni dello spazio, è molto preciso, riporta i dati in formato digitale e scambia informazioni con due tecnologie diverse, a scelta dell'utente: l'interfaccia I2C oppure l'interfaccia SPI.
+
+L'interfaccia è la prima cosa che ci interessa. Infatti, **interfaccia** è il termine tecnico con cui si indica la comunicazione tra due sistemi((fisici o virtuali)) indipendenti. Nel nostro caso, l'accelerometro e arduino.
+L'insegnante ci ha spiegato che l'interfaccia SPI((Serial Port Interface)) è detta anche porta seriale (funziona come i cavetti USB) ed usa quattro canali di comunicazione. L'interfaccia I2C, invece, è più lenta, ma usa solo due fili((Interface Two Cables)). Allora noi proveremo a lavorare con due fili.
+
+L'interfaccia I2C è descritta a pagina 18. La figura 40 contiene uno schema di collegamento. Abbiamo [[git|scaricato]] il software dimostrativo del produttore, lo abbiamo compilato come gli sketch di esercizio a cui eravamo già abituati e abbiamo raccolto i primi dati.

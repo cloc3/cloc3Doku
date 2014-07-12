@@ -1,0 +1,38 @@
+====== Controllo del flusso e trasferimento file sulla rete ======
+
+===== I flussi dei dati =====
+
+  ***cat /dev/arduino**
+
+Quando un nuovo dispositivo viene agganciato al computer, il sistema operativo ha il compito di rilevarne la presenza, riconoscerlo e renderlo accessibile all'utente.\\
+In linux, questo avviene attraverso la creazione di un file speciale nella cartella **/dev**. La versione di [[wiildos]] che utilizziamo a scuola è predisposta per la creazione del file **/dev/arduino**. Possiamo accedere a questo file come a un qualunque file di **flusso**, cioè come ad una successione di caratteri che possono essere visualizzati dal comando **cat**.
+
+Con questo comando riusciamo a stampare sullo schermo il //flusso// dei dati prodotti dal nostro accelerometro.\\
+Cat, infatti, è un programma che preleva un input da uno o più file e produce un output, che generalmente viene stampato sullo schermo.\\
+La scelta dello schermo, per la verità, non è pertinenza di cat. Ogni comando, infatti, affida i propri ouput al sistema operativo, e quest'ultimo decide dove dirigerli. Di solito, tutti gli ouput sono diretti sullo schermo, che assume il ruolo di **standard output**.
+
+Noi, però, potremmo avere bisogno di salvare questi dati o spostarli altrove. Per fare questo, non abbiamo bisogno di un nuovo programma, ma solo di istruire il sistema operativo a //ridirigere// i dati altrove. Il comando che esegue questa operazione si chiama **operatore di redirezione** ed è rappresentato dal simbolo di //maggiore//.
+
+  ***cat /dev/arduino>flusso.cvs**
+
+Questo comando crea un nuovo file, chiamato flusso.cvs, che contiene tutti i dati che, senza redirezione, sarebbero stampati sullo schermo.\\
+L'estensione **cvs** è utile per riutilizzare i dati stessi con un foglio di calcolo.
+
+===== Copiare file attraverso la rete =====
+
+Purtroppo, a scuola, non è facile aprire il file flusso.cvs con un foglio di calcolo.\\
+Il file flusso.cvs, infatti, risiede sul computer a cui è collegato l'unico esemplare di arduino di cui disponiamo. Ma questa macchina è un computer remoto per quasi tutti gli studenti che lavorano nell'aula, ciascuno dalla propria postazione, connessi per mezzo di una **sessione ssh**. Il foglio di calcolo, invece, è un programma grafico che è preferibile eseguire sulla postazione locale. Per lavorare in un modo più comodo, abbiamo deciso di imparare come si esegue una copia di file da remoto.
+
+Prima di tutto, usando la combinazione di tasti **CTRL-MAIUSC-T**, abbiamo aperto una seconda scheda sul terminale locale. In questo modo, abbiamo a disposizione due sessioni di terminale distinte. La prima esgue comandi sulla macchina remota, mentre la seconda sulla macchina locale.\\
+Dal titolo della nuova scheda, abbiamo riconosciuto il nostro username e il numero di ip della nostra macchina.\\
+Poi, dal terminale remoto, abbiamo utilizzato il comando **scp((copia sicura))**, con questa sintassi:
+
+  ***scp flusso.cvs nomeUtente@172.16.1....: **
+
+Ricordiamoci i due punti!!!\\
+Volendo, dopo i due punti, è possibile aggiungere il percorso in cui vogliamo copiare il file, oppure il nuovo nome che desideriamo attribuirgli.\\
+Ricordiamo anche che, se vogliamo fare un uso più completo del comando **scp**, possiamo consultare il manuale digitando **man scp**.
+
+Il comando **scp** richiede una password, che è quella dell'utente locale. Al termine, la copia è stata eseguita e possiamo aprire il file con il foglio di calcolo. Volendo, possiamo fare questo direttamente da terminale:
+
+  ***libreoffice -calc flusso.cvs**

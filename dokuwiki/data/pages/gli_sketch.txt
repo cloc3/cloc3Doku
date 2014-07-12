@@ -1,0 +1,69 @@
+====== Gli sketch ======
+
+[[Arduino]] non è solo un prodotto hardware.\\
+
+I suoi progettisti, infatti, hanno costruito attorno ad esso un vero e proprio ambiente di sviluppo, per consentire agli utenti di imparare rapidamente ad utilizzarlo. Tutti i software associati sono distribuiti come [[http://it.wikipedia.org/wiki/Software_libero|software libero]], per poter essere sviluppati e migliorati costantemente a ritmi e condizioni di qualità competitivi sul mercato.
+
+Noi studenti abbiamo potuto apprezzare la semplicità d'uso di Arduino fin dalla produzione del primissimo **sketch**. Infatti i programmi necessari per comandare Arduino sono così semplici che è stato attribuito ad essi questo nome un po' riduttivo. [[http://it.bab.la/dizionario/inglese-italiano/sketch|Sketch]], in inglese, significa **schizzo**, o **abbozzo**.
+
+Il primo programma che tutti i principianti imparano come esercizio di test serve a controllare un singolo led. Noi abbiamo dato a questo programma il nome **lucciola**, ma lo possiamo ritrovare su internet con una ricerca sulla chiave [[https://www.google.it/search?q=blink+arduino&ie=utf-8&oe=utf-8&rls=org.mozilla:it:official&client=firefox-a&gfe_rd=ctrl&ei=fbnnUpaQL4Hj_AanooGwAQ&gws_rd=cr|blink]] in molti posti diversi.
+
+===== Il circuito =====
+
+Gli sketch sono programmi costruiti per operare su oggetti fisici. Prima di cominciare, bisogna predisporre un circuito elettronico adatto, come quello nella figura a fianco.\\
+{{http://arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png?250X250   }}
+
+
+Addirittura, il nostro led funzionava bene senza bisogno di alcuna resistenza di protezione\\
+Per noi, un [[http://it.wikipedia.org/wiki/Led|led]] è una specie di lampadina, con due piedini asimmetrici, uno lungo e uno corto, che devono essere connessi rispettivamente al polo positivo e al polo negativo di un alimentatore di corrente continua. Il piedino numero 13 di arduino si può usare come una cosidetta **uscita digitale**, che si può programmare per generare un potenziale elevato((5 Volt)) oppure un potenziale nullo((GND: terra, o ground)). Quando il potenziale è elevato, il led è acceso, quando il potenziale si annulla, il led si spegne. Possiamo così giocare con il nostro led come con una luccioletta.
+
+===== Il codice =====
+
+  $ cat lucciola.ino
+  // This is just a mockup sketch for test scons works
+  
+  #define LUCCIOLA 13
+  
+  void setup(void)
+  {
+    pinMode(LUCCIOLA, OUTPUT);
+  }
+  
+  void loop(void)
+  {
+    digitalWrite(LUCCIOLA, HIGH);
+    delay(1000);
+    digitalWrite(LUCCIOLA, LOW);
+    delay(1000);
+  }
+
+**LUCCIOLA** è un nome di fantasia. **13** un canale fisico.\\
+Il programma consiste di due sezioni separate, cioè di due gruppi di istruzioni raccolte tra parentesi graffe.
+La prima sezione si chiama **setup**. //setup// è una funzione che raccoglie le istruzioni di preparazione del sistema, da eseguire una sola volta all'inizio del programma.\\
+La seconda sezione si chiama **loop**. //loop// vuol dire //anello//, o //ciclo//. Le istruzioni del loop vengono ripetute da arduino all'inifinito, subito dopo il setup.
+
+**setup**, **pinMode**, **digitalWrite** e **delay** sono parole tecniche, proprie dell'ambiente di sviluppo nativo di Arduino. Se vogliamo comprendere in modo dettagliato il loro significato, possiamo leggere direttamente le //specifiche// dichiarate nelle [[http://arduino.cc/en/Reference/HomePage|referenze]] ufficiali.
+
+===== Leggere un'istruzione =====
+
+Le istruzioni di questo sketch sono così semplici che le potrebbe comprendere anche un bambino((non fosse inglese :-) )).\\
+Se ne guardiamo una in dettaglio, tuttavia, possiamo scoprire un piccolo segreto:
+
+   digitalWrite(LUCCIOLA,HIGH);
+
+I programmi si scrivono, un po' come i testi normali, da sinistra verso destra, e poi vengono inviati al compilatore, per essere tradotti in linguaggio macchina.\\
+Il compilatore li riceve come le merci sul nastro trasportatore di un supermercato. Da destra verso sinistra:
+
+  - **HIGH** è un input: "Cosa voglio scrivere?"
+  - **LUCCIOLA** è un ouput "Dove lo voglio scrivere?"
+  - **digitalWrite()** è un processo: "Cosa voglio fare di questo input, verso questo ouput? 
+===== Giocare con il programma =====
+
+Sì, bè. Dovremmo spiegare ancora qualche dettaglio...\\
+Come abbiamo modificato il programma, usando un editor di testo(([[http://www.nano-editor.org|nano]])).\\
+Oppure come lo abbiamo compilato con un comando da tastiera(([[https://github.com/suapapa/arscons|scons]])).
+
+Ma questi sono davvero aspetti minimali.\\
+Il fatto è che ci siamo messi sponteamente a modificare i tempi di ritardo e abbiamo osservato alcuni effetti divertenti che, volendo, potremmo raccontare qui sotto.
+
+|  [[Un led che lampeggia]]  |

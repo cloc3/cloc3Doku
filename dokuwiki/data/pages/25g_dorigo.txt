@@ -1,0 +1,10 @@
+======= Imparare a usare Arduino =======
+
+|{{:arduino1.pdf|}}|
+
+<html>
+<div width="100%" style="margin:2em auto;text-align:center">
+<script src="http://api.html5media.info/1.1.5/html5media.min.js"></script><video
+src="http://www.cloc3.net/pnlug/passerotto.mp4" controls="" preload=""autoplay="autoplay" loop="loop" height="450" width="800"></video>
+</div>
+</html>

@@ -1,0 +1,21 @@
+====== Informatica al Liceo ======
+
+[b]Che titolone[/b] ;-)
+
+Al liceo, è l'informatica è un'avventura in un mondo nuovo e inesplorato.\\
+
+  #define LUCCIOLA 13
+
+Questa è la prima istruzione che abbiamo imparato.\\
+**LUCCIOLA** è il nome di una costante. Di fantasia. Il **13**, invece, è un indirizzo fisico.\\
+Arduino possiede un piedino numerato proprio così. Noi lo vogliamo usare per controllare un led.
+
+Dobbiamo scrivere un programma //software// che dialoga con l'//hardware//. Ci serve un linguaggio di //basso livello//.\\
+I progettatori di Arduino usano il linguaggio **C**. Anche noi usiamo il linguaggio **C**, nel nostro piccolo.
+
+Per imparare abbiamo bisogno di un ambiente solido ed elementare. Senza inutili distrazioni. L'insegnante ci sta insegnando a lavorare sul //[[il_terminale|terminale]]//.\\ Che è uno strumento ricco di storia e affonda le proprie radici agli inizi dell'informatica, ma non è affatto obsoleto. Anzi, non è neppure così difficile.
+
+Mettiamo qui una lista delle cose che possiamo raccontare:
+
+|  [[Il_terminale|Il terminale]]  ^  [[Unix]]  |  [[Gli sketch]] ^
+^  [[Wiildos]]  |  [[input_e_ouput|Input output]]  ^

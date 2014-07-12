@@ -1,0 +1,27 @@
+====== Un piccolo servizio web ======
+
+Come sappiamo il progetto [[http://qcn.stanford.edu|QCN]] consiste in una rete di acquisizione((e di elaborazione distribuita)) dei dati, che permette di trasportare a Standford le misure raccolte dagli accelerometri che l'università distribuisce alle scuole aderenti.
+
+Noi abbiamo già [[adxl345_input_output|imparato]] ad acquisire i dati attraverso la porta usb.\\
+Abbiamo ora bisogno di trasportare questi dati sul web, per metterli a disposizione ad un utente che lavora su un computer remoto.\\
+I programmi che gestiscono queste operazioni sono detti **Servizi web**.\\
+
+Creare un servizio web non è affatto difficile, soprattutto per noi che sappiamo usare [[netcat]].\\
+Il programma con cui abbiamo costruito il nostro server web(([[https://github.com/cloc3/arduGiochi/archive/dueAccelerometri.zip|scarica]])) si riduce a poche righe che abbiamo commentato e compreso facilmente a lezione:
+
+  cat ncWebService.sh -n
+     1  #!/bin/bash
+     2
+     3  handle_req()
+     4  {
+     5          read req file proto
+     6          # la risposta deve contenere un header per indurre il browser di includere il contenuto della risposta in una pagina web.
+     7          echo -e "HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nKeep-Alive: timeout=0, max=100\r\nConnection: keep-alive\r\n\r\n"
+     8          head -n4 <&5|sort -r & echo 4 >&5 # Prima leggere e poi scrivere
+     9  }
+    10
+    11  exec 5<>/dev/arduino  # apre la porta seriale in lettura e scrittura
+    12  sleep 3
+    13  typeset -fx handle_req
+    14  while  true;do nc -l -p 8000 -e "handle_req" -q0;done # apre il servizio web
+    15  exec 5<&- # questo è il modo corretto di chiudere la porta seriale. Questo esempio è acerbo, e nasconde il comando dietro un loop infinito. Da correggere.

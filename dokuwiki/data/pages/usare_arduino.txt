@@ -1,0 +1,14 @@
+[[Arduino]]  non è solo uno splendido giocattolo, ma anche un vero calcolatore programmabile.
+
+Usare arduino permette di lavorare e di imparare su due fronti tanto lontani quanto strettamente connessi tra loro: l'hardware e il software.\\
+Da un lato infatti, arduino consente di progettare alcuni elementari sistemi elettronici (per esempio led, resistenze, condensatori o quant'altro).\\
+Dall'altro, permette di creare piccoli programmi per controllarli.
+
+All'inizio, a scuola, l'uso di arduino costringe ad affrontare qualche grossa difficoltà organizzativa, perché gli studenti, anche nelle classi più avanzate, non possiedono molti degli strumenti tecnici di base indispensabili per lavorare e talora sono poco abituati allo spirito con cui bisognerebbe impegnarsi per cimentarsi con queste cose, che richiedono un po' di senso pratico, tanta curiosità e tanta disponibilità ad affrontare situazioni nuove.
+
+Gli aspetti più nuovi sono probabilmente quelli di tipo software.\\
+A scuola abbiamo scelto di utilizzare strumenti elementari, ma al tempo rigorosi e potenti, che ci hanno permesso di conoscere molte cose nuove.\\
+In questo modo abbiamo avuto l'occasione di parlare di concetti come:
+
+|  [[Il terminale]]  ^  [[Unix]]  |  [[Il codice di programmazione]]  ^  [[I Sistemi operativi]]  |
+^  [[Input e Ouput]]  |

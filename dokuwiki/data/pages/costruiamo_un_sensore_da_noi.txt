@@ -1,0 +1,26 @@
+======= Un progetto per costruire un sensore al Liceo=======
+===== Le pagine del nostro percorso=====
+
+|  [[accelerometro_adxl35|I primi passi]]  ^  [[adxl345_sketch_artigianale|Uno sketch artigianale]]  |  [[adxl345_input_output|Il dialogo con il terminale]]  |
+^  [[git|Il Git]]  |  [[netcat|Volare in rete]]  ^  [[server_web|Un piccolo servizio web]]  |
+|  [[applicazione_web|Ed ecco la App]]  ^  [[ridirigere_i_flussi|Redirigere i flussi]]  |  [[cronacalezione|Telecronaca di una lezione]]  ^
+^  [[saldature]]  | ||
+
+===== Introduzione al progetto=====
+{{ :pnlug:adxl345.mp4|800x450|loop,autoplay }}
+
+\\ \\ L'invasione sul mercato di un grande numero di piccoli dispositivi elettronici che stanno letteralmente trasformando molti aspetti della nostra esperienza quotidiana è un fenomeno caratterizzante di questi ultimi anni.
+
+Per penetrare il mercato, il produttore industriale deve centrare tre obiettivi principali: affidabilità, basso prezzo e facilità d'uso.\\
+Quest'ultima, però, non va intesa //ingenuamente// dal punto di vista dell'utente finale passivo, ma esclusivamente da quello del committente //qualificato//.
+
+Un accelerometro simile a quello utilizzato dal progetto [[http://qcn.stanford.edu|QCN]], ad esempio, è un sensore che può essere impiegato in un vastissimo insieme di usi diversi. Può diventare un componente di un tablet o di un telefonino, come può essere intregrato in un videogioco, nel dispositivo di uno strumento di chirurgia o nel motore di un elicottero, o infine, come nel nostro caso, può essere usato come strumento di misura di altissima precisione da uno scienziato nel campo della sismografia.\\
+In generale, chiunque abbia bisogno di acquistare un prodotto elettronico, vuole la garanzia di poter imparare rapidamente a sfruttarlo al massimo delle sue caratteristiche. Di conseguenza, ogni singolo prodotto deve essere distribuito nel rispetto di un insieme di regole condivise su una base internazionale, chiamati **standard**, che descrivono sia le caratteristiche fisiche del prodotto sia i software che lo devono utilizzare.\\
+Molto spesso, i produttori stessi abbinano ai propri prodotti dei software specifici che vengono rilasciati con licenza di **software libero**, per facilitare ancora di più i propri acquirenti.
+
+Tutti questi ragionamenti hanno una conseguenza pratica assolutamente semplice e immediata: acquistare sul mercato un accelerometro digitale di qualità a prezzi stracciati((meno di 7€, spese di spedizione incluse)) e imparare ad utilizzarlo è letteralmente un gioco da ragazzi :-).
+
+Per questa ragione, offrire ai nostri studenti di liceo scientifco l'occasione di dedicare impegno e interesse al mondo dell'informatica libera e dell'elettronica è, al giorno d'oggi, un imperativo categorico.
+Quanto meno per modificare certi modi di pensare e certe presunzioni inesatte diffusi a causa della propaganda pubblicitaria martellante e di alcuni comportamenti passivi di molta educazione istituzionale.
+
+È così che, a Tolmezzo, abbiamo cominciato a giocare con [[Arduino]]: una basetta elettronica di basso costo con prospettive didattiche uniche ed inesplorate.\\ Nei mesi di novembre, dicembre e gennaio, gli studenti hanno cominciato a [[usare_arduino|prendere confidenza]] con questo strumento durante le lezioni di fisica. Nei prossimi mesi, invece, si occuperanno dell'utilizzo di arduino per il controllo di un sensore sismografico basato sull'[[http://www.analog.com/static/imported-files/data_sheets/ADXL345.pdf|accelerometro adxl35]].\\

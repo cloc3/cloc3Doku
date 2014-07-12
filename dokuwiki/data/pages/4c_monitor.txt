@@ -1,0 +1,30 @@
+====== MONITOR ======
+
+
+**Che cos'è un monitor?**:\\
+Il monitor è un programma web che utilizziamo per visualizzare i dati ricevuti dai due accelerometri.\\
+
+**Per realizzare questo programma...**\\
+Abbiamo bisogno di gestire un flusso di dati che dalla periferica di __arduino__ si diriga su internet, l'oggetto che svolge questa funzione è un __programma server__ scritto con istruzioni di terminale che abbiamo anche in parte trovato su internet. 
+
+**Che cos'è un programma server?**
+Questo è un programma che si mette in ascolto e quando qualcuno lo chiama offre il suo servizio; questo servizio è fatto partire da un __input__ (solitamente un flusso di dati, che in questo caso sono stati rilevati dai nostri accelerometri) che viene trasmesso ad un CLIENT che, se il pacchetto è stato spedito adeguatamente e senza errori, lo rielabora visualizzandolo sotto forma di grafico. Dato che non tutti i motori di ricerca possiedono un client capace di fare ciò è necessaria la creazione anche di un client. \\
+Il programma server è di poche righe: {{ :schermata.png?800 |}} \\
+Ecco **i comandi principali**:\\  
+  * EXEC: si usa per sincronizzare la porta del computer (USB) con arduino poichè è presente un ritardo nell'acquisizione dei dati dalla periferica causando un errore.
+  * WILE TRUE; DO: esegue all'infinito il comando successivo (NETCAT "NC")
+  * NC: permette la creazione di un server, ed è composto da bla bla bla.....
+  * ECHO: scrive sul client una stringa
+  * -e: crea un flusso di input, dicendo al server di eseguire, quando chiamato, il prgramma che acquisice il flusso di arduino;
+  * HEAD: gestisce la ricezione di dati dall'accelerometro chiedendone un determinato numero;
+  * SORT: riordina i dati ricevuti dagli accelerometri.\\
+
+
+ --- //[[mariomartinis@email.it|Mario Martinis]] 2014/04/01 08:08// :-|
+Irene Fabiani :-P
+Marco Di Giorgi 8-)
+Sara Antonipieri LOL 
+
+
+
+

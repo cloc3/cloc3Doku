@@ -1,0 +1,13 @@
+====== Unix ======
+
+[[http://www.levenez.com/unix/unix.png|{{  http://www.levenez.com/unix/unix.png?800x30  }}]]
+
+Scusate se questa immagine è poco leggibile. Non c'è spazio. Se desiderate guardarla meglio, cliccateci sopra.
+
+Il problema è che la //quantità// di software prodotto a partire dalla tecnologia **UNIX** è assolutamente smisurato.
+[[http://www.unix.org/what_is_unix.html|Unix]] è un modello di sistema operativo che si è sviluppato, a partire dal 1969, in una miriade di implementazioni diverse, dal quale dipende la struttura fondante di tutte le tecnologie e gli standard informatici esistenti al giorno d'oggi.
+
+MacOs X, Linux o BlackBerry sono solo alcuni dei prodotti generati dalle tecnologie Unix. Senza Unix, **Internet** non potrebbe esistere o funzionerebbe in un modo completamente diverso da quello attuale.
+
+È importante riflettere sulla //scelta// degli strumenti che utilizziamo quando lavoriamo con l'informatica, per non lasciarci influenzare passivamente dalla propaganda pubblicitaria.\\
+Per questo, imparare ad usare, a scuola, alcuni strumenti costruiti sulla tecnologia Unix è molto importante, perché aiuta a collocare le proprie conoscenze di carattere informatico in un contesto storico e culturale più equilibrato e consapevole. Ecco perché giocare un pochino con il [[Il_terminale|terminale]] o con la distribuzione [[wiildos]] è un'opportunità utile per tutti e non una complicazione inutile delle lezioni scolastiche.

@@ -1,0 +1,11 @@
+====== QCN ======
+
+ **Che cos'è QCN?**\\
+**QCN** ( __Quake-Catcher Network__ ) è un progetto dell'Università di Standford che consiste nel creare una rete mondiale per la trasmissione dei terremoti in tempo reale con istituti scolastici e centri di emergenza tramite una diretta connessione sul WEB. Il nostro intento è proprio quello di emulare questo progetto.\\
+\\
+**I materiali** 
+ L'ADXL345 è un software che lavora su due protocolli I2C E SPI, il primo utilizzato anche da noi, e Arduino, una piattaforma hardware.
+Grazie alla grande quantità di materiale informativo on-line e l'esiguo prezzo degli strumenti, la reperibilità e l'apprendimento delle modalità di lavoro è stato piuttosto semplice.\\
+\\
+**Le fasi di lavoro**
+Per prima cosa, dopo esserci affidati alle guide sulla rete abbiamo imparato ad usare Arduino, poi ci siamo occupati del monitor WEB, e infine degli esperimenti.  

@@ -1,0 +1,38 @@
+======== Il terminale ========
+
+Questa che vi voglio raccontare è una fiaba di quelle che incominciano con **C'era una volta**...
+
+{{ :pnlug:lezioneDiBash.mp4|925x409|loop,autoplay }}
+
+
+\\ \\ Ebbene sì\\ **C'era una volta**, molto molto tempo fa, un mondo nel quale nessuno aveva ancora inventato //i link//.\\
+8-O Davvero?? Non posso crederci. Di sicuro non ero ancora nato.
+
+**[[http://it.wikipedia.org/wiki/Collegamento_ipertestuale|Orpo]]**\\
+Wikipedia racconta che i link sono stati concepiti negli anni sessanta, ma che la loro diffusione esplose veramente solo con l'espansione di Internet, cioè a partire dal 1991, in quel di Ginevra (cioè al Cern).\\
+
+>Ma allora... quei tempi, prima del '91: era quella un'//altra epoca?//\\ Nella nostra mente, un mondo senza i link dev'essere come, per un bambino, una //immensa stanza vuota//,\\ dove //non c'è nulla// che si possa guardare nè nulla che si possa toccare.
+Niente paura: non è affatto così. In informatica, un ambiente senza i link è semplicemente un luogo dove tutto è ancora da creare,\\ ma è un luogo tanto più ricco e tanto più affascinante di quanto non si possa credere.
+
+All'inizio, il terminale sembra davvero un posto misterioso.\\
+Quando sei davanti a un terminale non sai proprio cosa devi fare.\\
+Ma se solamente provi a digitare per due volte consecutive il tasto **tab**, accade qualcosa di inatteso e sorprendente:
+
+  cloc3@dell ~ $
+  Display all 4452 possibilities? (y or n)
+  
+^_^ Mi ha **parlato!!!**\\ Dice che ho davanti a me 4452 cose diverse da fare, e mi chiede persino se le voglio conoscere tutte!!!
+
+In pratica, un terminale è un ambiente in attesa, nel quale **ogni singola parola** digitata da tastiera corrisponde a un preciso **comando**.\\
+Al contrario, un ambiente grafico è un sistema che mette a disposizione dell'utente un //numero piccolo// di collegamenti, che possono essere attivati con un singolo gesto del mouse.
+
+È strano, ma vero: il terminale in assoluto, è l'**ambiente più potente** che, in informatica, si possa avere a disposizione, perché offre all'utente la possibilità di eseguire un numero quasi illimitato di operazioni. Di conseguenza, anche se le radici storiche del terminale affondano profondamente nella storia dell'informatica, non bisogna assolutamente credere che si tratti di uno strumento antiquato e superato dalla tecnologia.
+
+Forse proprio per questo il terminale è utilizzato poco dal grande pubblico. Perché molte persone fanno un uso talmente ristretto del computer che sentono il bisogno di operare in condizioni limitatissime e super protette, rinunciando però alla propria libertà di creare e di conoscere, senza accorgersi che, in questo modo, rischiano di rimanere, in un settore della conoscenza particolare ma di grande importanza sistemica, un po' //analfabeti//.\\
+Bè, la scuola avrebbe il dovere di aiutare le persone a espandere le proprie conoscenze e ad orientarsi anche in situazioni di una certa complessità. Per questo è importante che gli studenti di un liceo scientifico acquisiscano almeno una minima conoscenza degli ambienti di terminale.
+
+Con la scusa di imparare ad usare arduino, noi abbiamo imparato a muoverci sul terminale e a conoscere un piccolo insieme di comandi di base.
+Tra di essi:
+
+|  [[ls]]  ^  [[cd]]  |  [[mkdir]]  ^  [[nano]]  |
+^  [[cat]]  |  [[rm]]  ^  [[cp]]  |  [[mv]]  ^

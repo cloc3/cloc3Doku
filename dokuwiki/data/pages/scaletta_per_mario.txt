@@ -1,0 +1,9 @@
+-che cos'è il monitor web\\
+-che funzione ha\\
+-comandi base (brevemente)
+  -EXEC(Sincronizzazione porta seriale)
+  -HEAD(richiede dati a pacchetto)
+  -ECHO(Scrittura dati)
+  -NETCAT(redirige pacchetti dati su internet(client))(esempio chat)
+-Utilità del monitor web\\
+-Server\\

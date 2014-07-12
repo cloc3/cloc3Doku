@@ -1,0 +1,15 @@
+====== Esperimenti =====
+
+Lo scopo dell'esperimento è di registrare la velocità delle onde sismiche utilizzando due accelerometri collegati ad arduino.\\
+La velocità segue la formula V=s/t nella quale lo spazio (s) consiste nella distanza tra i due accelerometri mentre il tempo (t), misurato da arduino stesso, consiste nel ritardo tra l'istante in cui l'onda investe il primo accelerometro e quello in cui essa raggiunge il secondo.\\
+
+**Materiali**\\    
+  - due accelerometri
+  - arduino
+  - terminale
+  - fonte di irraggiamento delle onde
+
+
+**Procedimento**\\
+Dalla fonte di irraggiamento si propaga un'onda la quale raggiunge il primo accelerometro, il quale ne registra l'intensità al tempo (t1). Successivamente, l'onda investe il secondo accelerometro che ne registra l'intensità all'istante (t2). A questo punto, si ottengono due sismogrammi distinti poichè il secondo accelerometro registra l'onda in ritardo rispetto al primo: 
+ 

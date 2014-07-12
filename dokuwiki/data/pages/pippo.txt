@@ -1,0 +1,11 @@
+Arduino è una scheda elettronica con un microcontrollo che si usa per gestire input ed output in modo semplice e veloce.
+Noi per esercitarci l'abbiamo usato per far lampeggiare un led.
+Inizialmente abbiamo cominciato a destreggiarci con dei comandi base sul terminale come creare cartelle, entrare o uscire dalle stesse ecc.
+Poi abbiamo preso cofidenza con i vari elementi fisici dell' arduino: abbiamo realizzato un circuito collegando l'arduino ad una scheda millefori, e di conseguenza i vari canali di input e di output. (figura)
+Nel nostro circuito abbiamo usato una fotoresistenza, che corrisponde alla resistenza variabile, e di questa siamo poi riusciti a calcolare i valori di quest'ultima con un potenziometro o partitore di tensione (come in figura).
+Dopodichè abbiamo scritto il programma utilizzando il terminale che aveva dei comandi relativamente semplici.
+Abbiamo cominciato definendo le costanti che corrispondono a dei canali fisici di input e di output e poi le variabili (come la frequenza che ci è servita per cambiaqre la frequenza del led). 
+Poi abbiamo scritto il setup ovvero i comandi per comnciare il programma e infine abbiamo scritto il loop che corrisponde al programma vero e proprio.
+Nel loop abbiamo giocato con i delay, ovvero le pause, per cambiare il tempo tra l'accensione e lo spegnimento del led.
+Infine abbiamo realizzato il video.
+

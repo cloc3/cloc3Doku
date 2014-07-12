@@ -1,0 +1,14 @@
+====== Elettronica ed informatica ======
+
+La sismologia è una disciplina che coinvolge un grande numero di fenomeni di ogni genere e tipo.\\
+I fisici che se ne occupano sono obbligati ad affrontarla con l'uso di un vastissimo insieme di tecnologie e strumenti teorici.
+
+L'elettronica e l'informatica sono solamente alcuni di essi.\\
+Il progetto [[http://qcn-stanford.edu|QCN]], ad esempio, utlizza un accelerometro di basso costo e a bassa manutenzione per raccogliere dati sismografici.
+
+Noi, a scuola, oltre a partecipare a questa iniziativa, ci siamo resi conto di poter realizzare in proprio, nel nostro piccolo, qualche cosa di simile, usando risorse presenti sul mercato a basso costo sotto forma di //hardware e software// **liberi**, che funzionano con meccanismi facili da comprendere anche agli studenti di una scuola superiore.\\
+Il nostro **progetto** è quello di realizzare un sensore elettronico imparando ad usare un accelerometro digitale, a estrarre dati da esso e a smistarli in rete, visualizzandoli su un monitor integrato in una pagina web.
+
+Per riuscirci, dovremo compiere, tanti piccoli passi, ma percorrendoli uno alla volta ci accorgeremo che ciascuno di essi è piccolo abbastanza da arrivare fino in fondo al percorso.
+
+^  [[Arduino]]  |  [[Elementi di informatica]]  ^  [[costruiamo_un_sensore_da_noi|il nostro sensore]]  |

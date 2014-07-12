@@ -1,0 +1,45 @@
+=== Introduzione / Premesse ===
+
+Lo scopo dell'esperimento è di registrare la velocità delle onde sonore utilizzando due accelerometri, che costituivano il punto di partenza e quello di arrivo, collegati ad arduino.
+La velocità segue la formula V=s/t nella quale lo spazio s consiste nella distanza tra i due accelerometri mentre il tempo t, misurato da arduino stesso, consiste nel ritardo tra l'istante in cui l'onda investe il primo accelerometro e quello in cui essa raggiunge il secondo.
+
+=== Descrizione Esperimento ===
+
+Nella nostra classe abbiamo deciso di fare un esperimento: misurare il ritardo di un'onda sonora. Per fare ciò ci siamo accorti che era necessario avere 2 sensori collegati tra di loro e posti a una distanza di qualche metro in modo tale che uno costituisse il punto di partenza e uno il punto di arrivo. Successivamente abbiamo provocato un forte rumore e, grazie al terminale, abbiamo acquisito i dati di tempo e di spazio, che poi abbiamo trasferito su "Libreoffice" prima, poi su un foglio di calcolo. Avendo i dati di spazio e tempo abbiamo potuto calcolare la velocità dell'onda prodotta.
+
+Per fare questo esperimento abbiamo dovuto utilizzare le onde di suono e non quelle sismiche per problemi di spazio a disposizione e di velocità di acquisizione dei dati dei due sensori. Infatti, essendo la velocità del suono di 340m/s la distanza di un metro, o poco più, è sufficiente perchè i sensori, che acquisiscono i dati ogni 3 millisecondi, riuscissero a raccogliere i dati necessari. I nostri sensori, infatti, utilizzano la tecnica I2C mentre c'è anche la tecnica SPI che è più veloce. 
+
+
+=== Analisi Risultati ===
+
+Dei risultati che abbiamo ottenuto (1000 righe di dati) possiamo dire che: la prima colonna corrisponde al tempo. In particolare notiamo il fatto che le colonne corrispondenti all'asse Z hanno valori molto più alti rispetto a quelli degli assi X e Y.
+
+
+Sono riportati alcuni esempi dei dati raccolti qui in basso.
+
+  * 292472128 3 -1 241 10 36 244  
+  * 292475072 0 0 234 11 39 247  
+  * 292478004 1 0 229 7 38 241  
+  * 292480912 1 1 232 11 41 250  
+  * 292483844 0 -1 235 9 35 248  
+  * 292486764 -3 -2 235 9 37 245  
+  * 292489700 -1 1 234 9 38 248  
+  * 292492628 0 -4 232 5 39 248  
+  * 292495552 1 -1 231 6 38 251  
+  * 292498472 1 0 232 10 35 244  
+  * 292501396 -3 5 238 10 37 244  
+  * 292504332 -2 1 231 8 41 247  
+  * 292507264 -2 1 235 12 38 246  
+  * 292510208 3 -1 234 10 43 243  
+  * 292513160 1 1 235 11 37 244  
+  * 292516100 -1 0 231 10 39 243  
+  * 292519044 -2 1 229 10 37 246  
+  * 292521992 0 0 235 7 39 252  
+  * 292524900 1 0 232 14 41 248  
+  * 292527832 -1 0 232 9 37 245  
+  * 292530760 3 -1 234 11 38 248 
+
+Dal foglio di calcolo abbiamo spostato i dati in un grafico (vedi sotto) dal quale abbiamo potuto osservare le varie oscillazioni negli assi x,y,z dei due accelerometri. Si notino ad esempio i punti di vertice che indicano i momenti in cui sono state provocate le onde sonore.
+Grazie al grafico possiamo notare che i dati raccolti dai due accelerometri, riguardanti l'asse Z, sono diversi. Questo indica che il suono non è stato esercitato ad una distanza uguale fra un accelerometro e l'altro, portando quindi ad una maggiore oscillazione in prossimità di un accelerometro rispetto ad un altro.
+
+{{::acquisizione.png?1100|}}

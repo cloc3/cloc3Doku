@@ -1,0 +1,48 @@
+;-)
+
+GND: Ground\\
+VCC: potenziale corrente continua (consigliato usare 3,3 volt)\\
+CS:dobbiamo mettere sempre il massimo voltaggio per tenerlo bloccato\\
+INT1, INT2: scollegati (utilizzati per giochi)\\
+comandi output, input:\\
+SDO\\
+SDA: canale per il quale passano i dati\\
+SCL: (Clock) i dispositivi devono avere un tempo\\
+
+**lezione di fisica del 11/02/2014**:-D\\ 
+
+====== Guida di base per utilizzare ADSL  ======
+
+
+Non utilizziamo più il programma adafruit perchè è troppo professionale ma ci rivolgiamo al sito: __Live Fast - Code Young__ [[http://codeyoung.blogspot.it/2009/11/adxl345-accelerometer-breakout-board.html|Collegamento esterno]]che è un sito per i giovani fatto da giovani, siccome le informazioni sono state pubblicate nel 2009 avevano difficoltà a trovare i programmi perchè i produttori prima si occupano di creare l'oggetto e poi lavorano sui programmi.
+Due modi per dialogare con il sensore:\\
+  - Elenco numeratoSPI (in grado di separare imput e output)
+  - I2C (interface to cable, protocollo per dialogare tra circuiti integrati)\\
+La spiegazione per utilizzare I2C la troviamo a pagina 18.
+Scrittura fatta da quattro passi:\\ 
+  - **Elenco numerato Initiate transmission to device** (using write address)(il computer è formato da centro di controllo più varie perfierie es. la prima è la RAM (random memory)nella CPU ci sono registri nei quali si fanno le operazioni logiche, il dato viene prelevato o da altre periferiche e poi viene elaborato nella CPU noi dobbiamo lavorare li)\\
+  - **Write the address of the register we want to write**\\
+  - **Write the data we want to write to the register**\\
+  - **Finish transmission**\\
+__Le funzioni di arduino sono:__\\
+     *  begin\\
+  *     requestFrom\\
+  *     beginTransmission\\
+  *     endTransmission\\
+  *     write\\
+  *     available\\
+  *     read\\
+  *     onReceive\\
+  *     onRequest\\ 
+
+Appunti vari\\
+  * Elenco puntatoIl 2D si occupa del **set up**, ma manca un'istruzione importante il DATA_FORMAT io i dati li ho scritti in quei due bayt li ma quale dei due scelgo? c'è un problema di linguaggio, nel set up sarebbe interessante scegliere quale dei due formati.\\
+  * Dopo il setup bisogna fare il **loop** che ha 10 righe prima iniziamo a leggere il 32 e iniziano i dati, poi ci serviamo dei posti per le variabili y e z, poi lo leggiamo (6 3 assi) e lo mettiamo nel buffer (spazio di memoria) dobbiamo poi separare le cose (serve per trasportare il dato in un numero intero) poi alla fine lo mettiamo in una stringa e lo stampiamo.\\
+
+**SOURCE CODE FILE** (portare chiavetta per salvarlo) \\
+  * entrare sul terminale
+  * scrivere l'indirizzo di Simona con la password 
+  * poi aprire .ino
+  * e...\\
+{{:schermata-1.png?200|}}\\
+{{:schermata-2.png?200|}}\\
